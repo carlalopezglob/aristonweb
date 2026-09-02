@@ -1,0 +1,16 @@
+{
+  "name": "ux-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Punto de partida para proyectos de UX (specs + wireframes HTML) con Claude Code",
+  "type": "module",
+  "scripts": {
+    "serve": "npx serve output",
+    "estado": "node bin/estado.mjs",
+    "check": "node bin/check.mjs",
+    "importar-kit": "node bin/importar-kit.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

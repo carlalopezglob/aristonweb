@@ -1,0 +1,17 @@
+{
+  "nombre": "[Nombre del proyecto]",
+  "cliente": "[Cliente]",
+  "secciones": [
+    "_seccion-ejemplo"
+  ],
+  "breakpoints": {
+    "mobile": "<768",
+    "tablet": "768-1199",
+    "desktop": ">=1200"
+  },
+  "kit": {
+    "ruta": "../wireframe-kit",
+    "url": "",
+    "_nota": "Librería de módulos externa. NO se copia al repo: se referencia. Para adoptar módulos concretos: node bin/importar-kit.mjs --modulos CON-001,CRD-002"
+  }
+}

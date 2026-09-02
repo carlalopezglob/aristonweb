@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+.npm
+
+# Claude Code — ajustes personales de cada persona, no se comparten
+.claude/settings.local.json
+
+# Documentos del cliente: NO van al repo (pesan y Git no los versiona bien).
+# Quedan en Drive/Notion y se referencian en research/links.md
+*.pdf
+*.docx
+*.pptx
+*.key
+*.sketch
+*.fig
+*.zip
+
+# Capturas de trabajo (los assets propios del wireframe sí entran)
+*.png
+*.jpg
+*.jpeg
+!output/assets/**
+!output/**/*.svg
+
+# Variables de entorno
+.env
+.env.*
