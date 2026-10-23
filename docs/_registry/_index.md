@@ -5,7 +5,8 @@
 
 | Categoría | Índice | N.º módulos |
 | --- | --- | --- |
-| CON | [CON.md](CON.md) | 1 |
+
+_(sin categorías aún — se crean en Fase 2, al definir el primer módulo)_
 
 **Categorías habituales:** CAB (cabeceras) · CON (contenido) · CRD (cards) · NAV (navegación) ·
 FRM (formularios) · MDL (modales / overlays) · COM (componentes sueltos).

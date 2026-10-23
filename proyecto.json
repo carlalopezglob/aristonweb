@@ -1,8 +1,9 @@
 {
-  "nombre": "[Nombre del proyecto]",
-  "cliente": "[Cliente]",
+  "nombre": "Ariston Education — rediseño web institucional + coles",
+  "cliente": "Ariston Education",
   "secciones": [
-    "_seccion-ejemplo"
+    "institucional",
+    "colegio"
   ],
   "breakpoints": {
     "mobile": "<768",
