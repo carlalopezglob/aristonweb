@@ -102,6 +102,16 @@ Cualquier otra librería sirve igual: lo que el proyecto necesita es un módulo 
   `openVideoModal()` / `#video-modal`).
 - Mobile-first · 3 breakpoints: **<768** · **768-1199** · **≥1200**. Escala de grises, placeholders
   grises (nunca emojis), sin anotaciones visibles.
+- **Grid/flex con texto → `min-width: 0` en los hijos.** Por defecto un hijo de grid o flex no se
+  encoge por debajo del ancho de su contenido (un párrafo, un título largo), y desborda en mobile
+  (320-375px) aunque la pista tenga el ancho correcto — "grid blowout". La clase compartida `.grid`
+  ya lo lleva; en el grid propio de un módulo (`.miModulo__grid`), añadir `min-width: 0` a sus hijos
+  directos. Comprobarlo siempre a 320px, no solo a 375px — es el ancho donde se nota.
+- **`aspect-ratio` siempre junto a `width: 100%`.** `.img-placeholder` no fija ancho propio (no debe:
+  se usa en contextos distintos). Un elemento con `aspect-ratio` pero sin `width` definido puede
+  derivar el ancho de su alto (p. ej. si hereda `min-height: 200px`), dando un ancho mayor que su
+  contenedor. Al combinar `aspect-ratio` con `.img-placeholder`, fijar siempre `width: 100%` en esa
+  regla.
 - Cada página lleva `<meta name="ux-version" content="v1.0">` — de ahí lee `bin/estado.mjs`.
 
 ## Verificación

@@ -75,6 +75,11 @@ a    { color: inherit; }
 @media (min-width: 1200px) { .container { padding: 0 2rem; } }
 
 /* --- Grid genérico --- */
+/* min-width: 0 evita el "grid blowout": por defecto un hijo de grid/flex con texto no se
+   encoge por debajo de su contenido y desborda en mobile aunque la pista tenga el ancho
+   correcto. Aplica esto también en el CSS propio de cualquier módulo con su propio grid
+   (p. ej. .miModulo__grid > *) — es la causa más común de overflow en 320-375px. */
+.grid > * { min-width: 0; }
 .grid { display: grid; gap: var(--grid-gap); }
 .grid--2 { grid-template-columns: 1fr; }
 .grid--3 { grid-template-columns: 1fr; }

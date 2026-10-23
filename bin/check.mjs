@@ -15,6 +15,7 @@
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname, basename, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execSync } from 'node:child_process';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -55,6 +56,28 @@ for (const sec of SECCIONES) {
   if (!existsSync(join(RAIZ, 'docs', '_pages', sec))) {
     aviso(`Sección "${sec}" declarada en proyecto.json sin carpeta docs/_pages/${sec}/`);
   }
+}
+
+if (config.kit?.ruta) {
+  const kitPath = resolve(RAIZ, config.kit.ruta);
+  if (!existsSync(kitPath)) {
+    aviso(`proyecto.json → kit.ruta ("${config.kit.ruta}") no existe: ${rel(kitPath)}. node bin/importar-kit.mjs fallará hasta corregirlo.`);
+  } else if (!existsSync(join(kitPath, 'registry')) && !existsSync(join(kitPath, 'modules'))) {
+    aviso(`proyecto.json → kit.ruta ("${config.kit.ruta}") existe pero no parece un kit: no tiene registry/ ni modules/.`);
+  }
+}
+
+/* ─── 1b · Hook de git (bloqueo de push a main) ─────────────────────────── */
+
+try {
+  const hooksPath = execSync('git config core.hooksPath', { cwd: RAIZ, stdio: ['pipe', 'pipe', 'ignore'] })
+    .toString()
+    .trim();
+  if (hooksPath !== '.githooks') {
+    aviso(`git config core.hooksPath no apunta a .githooks (está "${hooksPath || 'sin configurar'}") — el push directo a main no está bloqueado en este clon. Arreglo: git config core.hooksPath .githooks`);
+  }
+} catch {
+  aviso('git config core.hooksPath no está configurado — el push directo a main no está bloqueado en este clon. Arreglo: git config core.hooksPath .githooks');
 }
 
 /* ─── 2 · Catálogo de módulos ───────────────────────────────────────────── */

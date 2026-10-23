@@ -13,8 +13,9 @@
   @media (min-width: 768px)  { .con001__grid { grid-template-columns: 1fr 1fr; gap: var(--space-12); } }
   @media (min-width: 1200px) { .con001__grid { grid-template-columns: 55fr 45fr; gap: var(--space-16); } }
 
+  .con001__text, .con001__media { min-width: 0; }
   .con001__text { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); }
-  .con001__media .img-placeholder { aspect-ratio: 16 / 9; border-radius: var(--radius-md); }
+  .con001__media .img-placeholder { width: 100%; aspect-ratio: 16 / 9; border-radius: var(--radius-md); }
   @media (min-width: 1200px) { .con001__media .img-placeholder { aspect-ratio: 4 / 3; } }
 </style>
 </head>

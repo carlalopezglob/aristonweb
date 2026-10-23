@@ -1,6 +1,6 @@
 # Plantilla — Módulo
 
-> **Cómo usar:** Duplícala, renómbrala como `[NNN Nombre del módulo].md` y muévela a `docs/_registry/<CAT>/`. Rellena todos los campos. Luego añádelo al índice de su categoría (`docs/_registry/<CAT>.md`) con su "cuándo usar".
+> **Cómo usar:** Duplícala, renómbrala como `<CAT>-NNN-nombre-en-kebab-case.md` (minúsculas, sin espacios ni acentos — el nombre bonito va dentro del documento, no en el nombre de archivo) y muévela a `docs/_registry/<CAT>/`. Rellena todos los campos. Luego añádelo al índice de su categoría (`docs/_registry/<CAT>.md`) con su "cuándo usar".
 
 ---
 
@@ -49,6 +49,12 @@
 | --- | --- | --- | --- |
 | Layout general | [descripción] | [descripción] | [descripción] |
 | [Elemento específico] | [cómo se ve] | [cómo se ve] | [cómo se ve] |
+
+> ✅ Antes de verificar: si el módulo usa grid o flex con texto dentro, los hijos directos llevan
+> `min-width: 0` (si no, desborda en 320-375px aunque la pista tenga el ancho correcto — "grid
+> blowout"). Si combina `aspect-ratio` con `.img-placeholder`, esa regla lleva también
+> `width: 100%` (si no, el ancho puede salir del alto en vez de al revés). Comprobar siempre a
+> 320px, no solo a 375px.
 
 ---
 

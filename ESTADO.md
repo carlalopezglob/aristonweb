@@ -1,7 +1,7 @@
 # ESTADO — [Nombre del proyecto]
 
 > ⚙️ **Archivo autogenerado — no editar a mano.** Regenerar con `node bin/estado.mjs`.
-> Última regeneración: 2026-09-02 · 1 página(s) · 0 sin wireframe.
+> Última regeneración: 2026-10-23 · 1 página(s) · 0 sin wireframe.
 
 | Página | Sección | Sprint | Estado | Bloques | Wireframe | Pendientes | Versión |
 | --- | --- | --- | --- | --- | --- | --- | --- |
