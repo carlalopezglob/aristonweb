@@ -23,4 +23,7 @@ sitios). Es material de trabajo, no se carga en Fase 2 — lo que pasa a Fase 2 
 
 | Documento | Formato | Dónde está | Qué genera |
 | --- | --- | --- | --- |
-| [Nombre del doc] | PDF / Word / Deck | Drive / Notion / [carpeta] | [Decisión o información que aporta] |
+| Ariston Education: Web Platform — Kick-off meeting session (AE-web-platform-kick-off-overview_Sprint0) | PDF (deck) | Notebook de Google ("ARISTON", compartido por Carla) + carpeta local `SPRINT 0/Material cliente/` | Documento maestro: objetivos del proyecto, gobernanza (central vs. cole), quality bar, footprint real de coles, marca/posicionamiento oficial, analítica web por sitio, plan de rollout y calendario de Sprint 0. Volcado en `hallazgos.md` v2.0 |
+| School websites benchmarking (school-websites-benchmarking) | PDF (deck, jul. 2026) | Mismo notebook/carpeta | Benchmark de 6 competidores + 3 grupos propios representativos (Orbital/Merited/CBS). Volcado en `benchmark.md` |
+| Ariston Education \| Sprint 0 \| Plan de sesiones v2 | Word | Carpeta local `SPRINT 0/Inevestigacion Sprint 0/` | Plan original de entrevistas (nuestro, de GUT) antes del ajuste del cliente. Volcado en `entrevistas.md` §2 |
+| Kick-off Meeting — transcripción + apuntes (Ariston Education Web Platform Project, Apuntes Kick off) | Word | Carpeta local `SPRINT 0/Kick off/` | Transcripción completa de la sesión del 22 oct 2026 — contexto verbal no recogido en el deck (p. ej. preocupación sobre currículo/idiomas, riesgo de fecha del workshop). Volcado en `hallazgos.md` y `entrevistas.md` |

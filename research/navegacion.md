@@ -28,18 +28,31 @@
 
 | Campo | Valor |
 | --- | --- |
-| Fecha | [YYYY-MM-DD] |
-| Asistentes (Ariston) | [Nombres/roles] |
-| Asistentes (equipo) | [Nombres/roles] |
+| Fecha | Jue 12 nov 2026, 15:00, 2h (confirmado en el kickoff deck del cliente — ver riesgo de calendario en `entrevistas.md`) |
+| Asistentes (Ariston) | Todos los de E1-E4 + Nick Reynolds (Chief Marketing, Admissions & Communications Officer) + Nerea Lorenzo + Paz Guadamillas |
+| Asistentes (equipo) | Equipo GUT (pendiente confirmar lista final) |
 | Objetivo | Construir junto al cliente la IA de la web institucional y la IA de la plantilla de colegio |
 
-**Dinámica / material usado:**
-- [Resumen de as-is + benchmark + entrevistas mostrado en el workshop — enlazar o resumir, no pegar todo]
-- [Técnica usada: card sorting en vivo / validación de propuesta previa / otra]
+**Qué entrega oficialmente el Sprint 0 (del kickoff deck del cliente — esto es lo que el workshop
+tiene que dejar cerrado):**
+1. Arquitectura de la información para el sitio de grupo y el modelo de sitio de colegio.
+2. Modelo de navegación con los principales "family journeys".
+3. Qué es común, específico de cada colegio, y opcional.
+4. Una primera dirección visual (look & feel, no la home definitiva).
+5. El plan de los sprints de diseño y desarrollo.
+
+**Dinámica (según se explicó en el kickoff):**
+- 3 partes: **Alineamiento** (síntesis en bloques cortos: qué diferencia a cada cole, cómo decide
+  una familia, qué es de grupo vs. de cole, quién gestiona qué — se corrige en vivo lo que no
+  encaje) → **Visión y necesidades** (qué más les gustaría que hiciera la web, se prioriza junto al
+  cliente, pero queda fuera de alcance de este Sprint 0 — se valora para fases posteriores) →
+  **Bocetado de arquitectura** (primer esbozo de IA de la web de colegio y qué secciones son
+  comunes/propias/opcionales).
+- La web del grupo (institucional) se resuelve aparte, a partir de las entrevistas — el foco
+  principal del workshop son los colegios.
 
 **Decisiones tomadas en el workshop:**
-- [Decisión 1]
-- [Decisión 2]
+- [Pendiente — el workshop aún no se ha celebrado]
 
 ---
 
