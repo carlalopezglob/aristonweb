@@ -73,8 +73,39 @@ cuando el navegador esté disponible.
 - **News & Events:** grid de 12 tarjetas con filtro simple (All/News/Events),
   sin paginación.
 
+## Páginas internas revisadas (2ª tanda)
+
+- **Who we are:** intro + **vídeo embebido** (sin título/texto propio) + bloque
+  de cifras (4 items: país/coles/nacionalidades/alumnos) + 4 módulos
+  repetidos por audiencia (Students/Parents/Teachers/Schools: imagen+título+
+  texto, solo "Schools" lleva CTA).
+- **Mission, vision & values:** bloques Misión y Visión como icono+título+texto
+  (sin imagen, sin repetirse — un único bloque cada uno). Bloque "Safeguarding"
+  destacado con el mismo patrón icono+título+texto pero separado visualmente.
+  Lista numerada de 7 valores (número+título+frase corta, sin icono ni link).
+- **Educational pillars:** 3 bloques de pilar (imagen+título+texto+lista
+  anidada de 6-7 items) + **callout "Did you know?"** en cada uno (icono+
+  subtítulo+dato estadístico+nota al pie con link a fuente externa) — patrón
+  nuevo, se repite 3 veces aquí. Bloque final "The Ariston Quotient (AQ)"
+  como logo de marca + título + texto corto.
+- **Global Student Advisory Board:** intro + bloque "Why it matters" + mismo
+  callout "Did you know?" (confirma que es un patrón repetido, no puntual) +
+  grid de 5 tarjetas tipo FAQ (pregunta como título + texto) + bloque de
+  contacto + **timeline con fechas reales** (5 hitos: cierre de solicitudes,
+  notificación, reuniones — cada uno con fecha, título y descripción) + CTA
+  final con lista de pasos + fecha límite.
+- **Insights:** listado tipo blog, 5 tarjetas (imagen+fecha+título+link, solo
+  la primera con extracto), sin filtros ni paginación — mismo patrón que
+  News & Events.
+
+**Dos tipologías nuevas confirmadas** (ver `inventario-modulos.md` #20-22):
+vídeo embebido, callout de dato destacado con fuente, y timeline de hitos con
+fecha — esta última contradice la nota transversal anterior de que "no hace
+falta modelar timeline": aquí sí hay un caso real con fechas concretas, a
+diferencia de la historia de CEDES (que no la tenía).
+
 ## Pendiente
 
-- Revisar páginas internas: Who we are, Mission/vision/values, Educational
-  pillars, Global Student Advisory Board, Insights.
+- Páginas de detalle: artículos de Insights y de News & Events individuales
+  (no auditadas, probablemente mismo patrón de página de artículo).
 - Pasada visual (capturas) en cuanto el navegador funcione.

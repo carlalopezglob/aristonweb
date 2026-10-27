@@ -11,10 +11,11 @@ se anota como variante. Dos bloques solo se consideran módulos distintos
 cuando su esquema de campos es realmente distinto (p. ej. "texto+imagen" vs.
 "grid repetible de tarjetas").
 
-**Estado:** cubre las 4 homes + una primera tanda de páginas internas
-(equipo/liderazgo y buscador de coles en institucional; admisiones y
-noticias en Alminar; admisiones en CBS; historia y programa educativo en
-CEDES). Quedan páginas internas sin revisar — ver pendientes al final.
+**Estado:** cubre las 4 homes + dos tandas de páginas internas. **Institucional
+ya está auditado al 100% de sus 9 páginas de nav** (home, Who we are,
+Mission/vision/values, Leadership team, Educational pillars, Global Student
+Advisory Board, Insights, News & events, Find a school). De los 3 coles
+piloto quedan páginas internas sin revisar — ver pendientes al final.
 
 ## Catálogo de tipologías — base (de la fase 1, homes)
 
@@ -48,6 +49,13 @@ no para el módulo en sí.
 | Alminar | "Bloque de captación" (admisiones) | ✅ | — | — (el CTA es el formulario debajo) |
 | CEDES | Secciones por etapa (school-overview) | ✅ (subtítulo) | — | ✅ ("Descubre más...") |
 | Institucional/CBS/CEDES | Bio completa de persona (variante) | ✅ (nombre) | ✅ (foto) | — |
+| Institucional | Misión / Visión / Safeguarding (mission-vision-values) | ✅ | — (icono en su lugar) | — |
+| Institucional | 4 módulos de audiencia (Who we are: Students/Parents/Teachers/Schools) | ✅ | ✅ | solo 1 de 4 |
+| Institucional | "The Ariston Quotient (AQ)" (educational-pillars) | ✅ | ✅ (logo de marca) | — |
+
+→ Nueva variante confirmada: el campo "imagen" de este módulo puede ser un
+**icono** en vez de una foto (Misión/Visión/Safeguarding) — sigue siendo el
+mismo esquema de campos, solo cambia el tipo de recurso visual.
 
 → Confirmado: las "secciones por etapa" de CEDES en páginas internas usan
 este módulo repetido verticalmente, no un grid — mismo contenido
@@ -91,8 +99,9 @@ columna vertical (eso es una decisión de layout, no de esquema de datos).
 |---|---|---|---|
 | Institucional | Comunidad global | 3 | — |
 | CBS | Logros académicos | 1 cifra + 3 stats | ✅ (logo Cambridge) |
+| Institucional | "Our global presence" (Who we are) | 4 | ✅ (icono) |
 
-Sin novedades en páginas internas revisadas.
+Confirma el patrón, sin variante nueva.
 
 ### 5. Banner CTA
 **Campos:** Título · Texto breve (opcional) · Imagen de fondo (opcional) · CTA
@@ -221,6 +230,46 @@ catalogado aparte porque tiene su propio patrón visual (números, flechas),
 pero en la propuesta final podría implementarse como una propiedad del
 módulo #3 en lugar de un módulo independiente.
 
+## Tipologías nuevas — 2ª tanda (institucional: páginas restantes)
+
+### 20. Vídeo embebido
+**Campos:** Vídeo (embed, p. ej. YouTube) · Título (opcional) · Texto (opcional)
+
+| Sitio | Instancia |
+|---|---|
+| Institucional | "Who we are" — vídeo embebido sin título ni texto propio, como bloque independiente entre la intro y el bloque de cifras |
+
+Módulo mínimo — de momento solo se ha visto sin título/texto, pero se deja
+el campo como opcional por si aparece en otra página con descripción.
+
+### 21. Callout de dato destacado (con fuente)
+**Campos:** Icono · Título/subtítulo corto · Texto con el dato o estadística · Nota al pie con link a fuente externa (opcional)
+
+| Sitio | Instancia | Nº de apariciones |
+|---|---|---|
+| Institucional | "Did you know?" en los 3 pilares de Educational Pillars | 3 |
+| Institucional | "Did you know?" en Global Student Advisory Board | 1 |
+
+Se repite igual 4 veces en 2 páginas distintas — suficiente recurrencia para
+ser su propia tipología y no una variante de Contenido Media (#2): la clave
+es que siempre cita una fuente externa (nota al pie enlazada), algo que
+ningún otro módulo del catálogo hace.
+
+### 22. Timeline de hitos con fecha
+**Campos del contenedor:** Título (opcional)
+**Campos por hito:** Fecha (mes/año) · Título · Descripción (opcional)
+
+| Sitio | Instancia |
+|---|---|
+| Institucional | "A year on the Global Student Advisory Board" — 5 hitos con fecha real (cierre de solicitudes, notificación, reuniones) |
+
+**Esto es genuinamente nuevo** y matiza la nota transversal de más abajo
+sobre "historia sin timeline": aquí sí hace falta un módulo con un campo de
+**fecha real** por item (no solo un número de orden, como en el Grid de
+tarjetas #3) — por eso no se puede resolver con #3. Candidato a usarse en
+procesos con calendario explícito (admisiones, comités, programas con
+fechas), no solo en páginas de "historia".
+
 ## Notas transversales (patrones que NO son módulos nuevos)
 
 Estas observaciones son importantes para no inflar el catálogo:
@@ -238,19 +287,25 @@ Estas observaciones son importantes para no inflar el catálogo:
 - **Bloque de compartir**: mismo esquema que el bloque social (#10), con
   comportamiento distinto (ver nota en #10).
 - **Historia del colegio sin timeline formal** (CEDES): confirma que no es
-  obligatorio modelar un módulo "timeline con hitos/años" — con Contenido
-  Media (#2) repetido como texto corrido ya se cubre; si en otra página
-  apareciera una timeline visual con años destacados, sí sería candidata a
-  evaluar como variante nueva de #2 (con un campo "fecha/hito" añadido).
+  *obligatorio* modelar un timeline para contar una historia — con Contenido
+  Media (#2) repetido como texto corrido ya se cubre. **Pero el caso
+  contrario también existe**: la página del Global Student Advisory Board sí
+  necesita un timeline real con fechas (#22) — así que el módulo #22 queda
+  en el catálogo como pieza aparte, reservada para procesos con calendario
+  explícito, no para "contar historia" en general.
 
 ## Lectura actualizada para la propuesta de módulos/plantillas
 
-Con dos tandas de auditoría (homes + primera ronda de páginas internas), el
-catálogo se mantiene en **19 tipologías** (15 base + 4 nuevas:
-datos clave, lista simple, filtros, paginación), muy por debajo del límite
-de 30, y varias páginas internas aún sin revisar. Esto confirma que
-clasificar por esquema de campos (y no por contenido) es lo que permite
-llegar a un sistema de módulos compacto y reutilizable.
+Con tres tandas de auditoría (homes + 2 rondas de páginas internas, con
+institucional ya al 100%), el catálogo sube a **22 tipologías** (15 base +
+4 de la 2ª tanda: datos clave, lista simple, filtros, paginación + 3 de la
+3ª tanda: vídeo embebido, callout de dato con fuente, timeline de hitos),
+todavía cómodamente por debajo del límite de 30 — y eso que institucional
+ya está completo y solo quedan páginas internas de los 3 coles piloto.
+Confirma que clasificar por esquema de campos (y no por contenido) es lo
+que permite llegar a un sistema de módulos compacto, y que el catálogo
+tiende a estabilizarse: la 3ª tanda, aunque cubrió el doble de páginas que
+la 2ª, solo aportó 3 tipologías nuevas frente a las 4 anteriores.
 
 Casos límite aún abiertos:
 - ¿Banner CTA (#5) es un módulo propio o una variante compacta del Hero (#1)?
@@ -264,13 +319,17 @@ Casos límite aún abiertos:
 - **Formularios:** ninguna pasada de texto reveló los campos reales de un
   formulario de admisiones — es la pieza más importante que falta y
   necesita pasada visual (o pedir al cliente capturas/acceso al formulario).
-- Páginas internas aún sin revisar: Mission/vision/values e Insights
-  (institucional); El Colegio, Proyecto Educativo, Etapas educativas,
-  páginas de cada servicio (Alminar); Conózcanos completo, Instalaciones,
-  páginas de Key Stage individuales, Preguntas Frecuentes (CBS); Vida
-  Escolar, Contacto (CEDES — el fetch devolvió 404, falta la URL correcta),
-  páginas de cada etapa educativa (CEDES).
+- **Institucional: completo** (9/9 páginas de nav). Quedan solo páginas de
+  detalle (un artículo de Insights, una noticia de News & Events) sin abrir
+  — probablemente mismo patrón, bajo prioridad.
+- Páginas internas aún sin revisar en los 3 coles piloto: El Colegio,
+  Proyecto Educativo, Etapas educativas, páginas de cada servicio (Alminar);
+  Conózcanos completo, Instalaciones, páginas de Key Stage individuales,
+  Preguntas Frecuentes (CBS); Vida Escolar, Contacto (CEDES — el fetch
+  devolvió 404, falta la URL correcta), páginas de cada etapa educativa
+  (CEDES).
 - Pasada visual con capturas en los 4 sitios — sigue pendiente por el fallo
   del navegador integrado en esta sesión.
 - Una vez cerrado el catálogo de tipologías, mapear qué combinación de
-  módulos compone cada una de las 12-15 plantillas de página.
+  módulos compone cada una de las 10-12 plantillas de página (número
+  oficial del kickoff deck del cliente).
