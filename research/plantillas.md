@@ -102,45 +102,73 @@ template is pending the combined system-wide version.
 **Ejemplo (captura en Figma):** CBS — Home
 
 ### T2 — Content Page (flexible)
-**Páginas:** CEDES Nuestra Historia · CEDES Proyecto Educativo y Currículo · CBS Carta del
-Director · CBS Ideario · CBS Acerca de Ariston Education · CEDES Quiénes somos · CEDES Primaria /
-Secundaria / Bachillerato · +16 más entre CEDES y CBS (~23 páginas en total)
-**Secuencia:** Header → Hero → repeated Content Block (+ optional Simple List / Stats Block /
-Stat Callout / Image Gallery / Social Block-share / List of Links-sidebar / Breadcrumb / Card
-Grid-'what's next') → optional CTA Banner → Footer.
-**Razonamiento:** The most reused template among the coles — ~23 pages across CEDES and CBS once
-"Breadcrumb" (CBS Conferencias) and the sidebar/share/related-card slots (CEDES) are read as
-optional additions to the same skeleton. Whether this merges with institucional's own Content
-Page template (T2 there too — same shape, not yet reconciled) is a question for the combined
-system-wide version. ⚠️ Convergence open question: CEDES's stage pages (Primaria/Secundaria/
-Bachillerato) land here, but CBS's equivalent stage pages (EYFS/Primary/Secondary/Sixth Form)
-land in T8 — same real content (a school stage/curriculum page), two structurally different
-as-is shapes (this one has Hero + Key Facts List + Social Share + Card Grid; T8's has no Hero, a
-Simple List of Subjects, Handbooks and a CTA). Not something to resolve by auditing — it is a
-Fase 2 decision: which shape becomes the single future standard for all schools, or whether a new
-unified shape is designed. See T8.
+**Páginas (46, verificadas una por una contra su secuencia real de módulos, no estimadas):**
+CEDES Nuestra Historia · CEDES Proyecto Educativo y Currículo · CBS Carta del Director · CBS
+Ideario · CBS Acerca de Ariston Education · CEDES Quiénes somos · CEDES Primaria / Secundaria /
+Bachillerato / Infantil (las 4 páginas de etapa de CEDES) · CEDES Política de Calidad /
+Accreditaciones · CEDES Ariston Education · CEDES Enseñanza 100% bilingüe · CEDES Proyecto
+Solidario · CEDES Actividades Extraescolares · CEDES Comedor Escolar · CEDES Orientación
+Educativa · CEDES Información General de Contacto · CEDES Política de cookies / privacidad /
+Aviso legal · CBS Carta de la Directora Ejecutiva · CBS Himno del CBS · CBS Conferencia 2016–2019
+(4 archivadas) · CBS Calidad · CBS Instalaciones · CBS Calendario escolar · CBS Comedor · CBS Apps
+del CBS · CBS Alumni · CBS Departamento Psicopedagógico y de Apoyo · CBS Acreditaciones · CBS
+Inspecciones Nabss · CBS Work Experience · CBS Globot · CBS Expedientes y convalidaciones · CBS
+Contacto · Alminar Comedor · Alminar Transporte escolar · Alminar Uniformidad · Alminar Aula
+matinal · Alminar Políticas escolares · Alminar Etapas educativas
+**Secuencia:** Header → Hero (opcional — ausente en todas las páginas de CBS, presente en las de
+CEDES) → repeated Content Block (+ optional Simple List / Stats Block / Stat Callout / Image
+Gallery / Social Block-share / List of Links-sidebar / Breadcrumb / Card Grid-'what's next' /
+Card Grid-FAQ / Form / Logo Grid / Accordion Expandable) → optional CTA Banner → Footer.
+**Razonamiento:** The most reused template among the coles — 46 pages across Alminar, CEDES and
+CBS once "Breadcrumb" (CBS Conferencias) and the sidebar/share/related-card slots (CEDES) are
+read as optional additions to the same skeleton — verified page by page against each card's real
+module sequence, not estimated. 2 pages initially assumed to be T2 turned out to be a different
+shape on closer check: CBS "Programa Educativo (overview)" (Hero + Card Grid, no Content Block —
+moved to T5) and CEDES "Puertas Abiertas (Open Days)" (has a Form — same page as "Jornada de
+Puertas Abiertas", already in T7, not a separate instance). Whether this merges with
+institucional's own Content Page template (T2 there too — same shape, not yet reconciled) is a
+question for the combined system-wide version. ⚠️ Convergence open question: CEDES's stage pages
+(Primaria/Secundaria/Bachillerato/Infantil) land here, but CBS's equivalent stage pages
+(EYFS/Primary/Secondary/Sixth Form) land in T8 — same real content (a school stage/curriculum
+page), two structurally different as-is shapes (this one has Hero + Key Facts List + Social Share
++ Card Grid; T8's has no Hero, a Simple List of Subjects, Handbooks and a CTA). Not something to
+resolve by auditing — it is a Fase 2 decision: which shape becomes the single future standard for
+all schools, or whether a new unified shape is designed. See T8. ⚠️ Convergence pattern, 3rd case
+found: Alminar writes a real Content Block intro before its service-page lists (Comedor,
+Transporte, Uniformidad, Políticas escolares — all added here) — CBS/CEDES often skip it and ship
+a bare list instead (CBS Uniforme escolar, CBS/CEDES Transporte, CEDES Políticas Escolares — left
+unclassified, see Pendiente). Same "which school's version becomes the standard" question as the
+stage-page case above. ⚠️ Same pattern again in legal pages: CEDES's (Aviso legal/Privacidad/
+Cookies) have a Content Block + Accordion and count here; CBS's are just a bare "Legal Text
+Block", no Content Block, and don't (see Pendiente).
 **Ejemplo (captura en Figma):** CEDES — Nuestra Historia
 
 ### T5 — Listing
 **Páginas:** Alminar Noticias · CBS Conferencias (archivo) · CBS Nuestro Colegio — Servicios
-(hub) · CBS Extraescolares (overview hub)
+(hub) · CBS Extraescolares (overview hub) · CBS Programa Educativo (overview)
 **Secuencia:** Header → Hero → optional Filters (simple or tabbed) → Card Grid (Articles /
 Services / Resources) → optional Pagination → Footer.
 **Razonamiento:** Generalised "Card Grid (Articles)" to also cover service/resource hubs — CBS's
 Servicios hub and Extraescolares overview use the exact same shape (filtered grid linking to
-detail pages), just with a tabbed filter instead of simple pills. 4 real instances among the
-coles.
+detail pages), just with a tabbed filter instead of simple pills. 5 real instances among the
+coles. CBS "Programa Educativo (overview)" added after checking its real module sequence (Hero +
+Card Grid linking to the 4 Key Stage pages) — same hub shape as the other hubs here, not the
+Content Page shape it was first assumed to be.
 **Ejemplo (captura en Figma):** Alminar — Noticias
 
 ### T7 — Admissions / Enrolment
 **Páginas:** Alminar Admisiones · CBS Admisiones · CBS Admisiones (overview + Por qué CBS) · CBS
 Solicitud de Información · CBS Admisiones — 5 secciones (acordeón) · CEDES Contacto Admisiones ·
-CEDES Jornada de Puertas Abiertas · CBS Jornadas de Puertas Abiertas
+CEDES Jornada de Puertas Abiertas · CBS Jornadas de Puertas Abiertas · CBS Preguntas Frecuentes
 **Secuencia:** Header → Hero (often multichannel CTAs) → flexible content zone (Content Block /
 Simple List / Form / Card Grid-numbered steps / Accordion Expandable) → optional CTA Banner →
 Footer.
-**Razonamiento:** ~16 real instances now across all 3 coles — confirmed as one of the
-highest-leverage templates in the system, not a 2-page curiosity. ⚠️ Scope caveat from the E2
+**Razonamiento:** 12 real instances across all 3 coles (verificado página por página, no
+estimado) — confirmed as one of the highest-leverage templates in the system, not a 2-page
+curiosity. Se añade CBS "Preguntas Frecuentes" (Admissions FAQ) tras la revisión completa. Nota:
+CEDES "Puertas Abiertas (Open Days)" y "Jornada de Puertas Abiertas" son la misma página real bajo
+dos etiquetas de navegación (captura duplicada confirmada) — cuenta una vez, no dos. ⚠️ Scope
+caveat from the E2
 interview (Paz Guadamillas, Aniol Javaloyes): in EMEA, the real application/enrolment happens on
 an EXTERNAL Orbital portal, not the website — this template covers enquiry, lead-gen and
 visit-booking only, NOT document upload, offer or payment. That hand-off needs its own UX
@@ -174,7 +202,10 @@ template here — a page built this way can't be described as "Content Block rep
 tabs of arbitrary content." Only 2 real instances so far (both Alminar), but each compresses what
 institucional spreads across many nav pages (El Colegio alone covers Who-we-are + Team +
 Facilities + Directions in one URL) — worth tracking separately to see if other coles converge on
-it or if it stays an Alminar-specific legacy pattern.
+it or if it stays an Alminar-specific legacy pattern. Nota: Alminar "Gabinete de Psicología y
+Logopedia" también usa el módulo #24 (8 pestañas), pero lo envuelve con su propio Content Block +
+Contact Block — no encaja limpiamente en la secuencia mínima de esta plantilla, así que no cuenta
+como 3ª instancia. Flaggeado para que no se pierda, no sumado a la cifra.
 **Ejemplo (captura en Figma):** Alminar — El Colegio / Quiénes somos
 
 ### T10 — NUEVO — Account Access / Login
@@ -200,7 +231,14 @@ see if they generalise or stay Alminar/CBS-specific. T7 Admissions now carries a
 caveat from the E2 interview: it covers enquiry/visit-booking only, the deep funnel lives on an
 external portal in EMEA. Reconciling this 7-template coles view against institucional's own 6
 templates (T1–T6) into one system-wide count, against the 10–12 client budget, is the next step —
-not done in this frame. ⚠️ Flagged, not resolved: T2 and T8 both contain "school stage /
+not done in this frame. Updated coverage after verifying T2/T5/T7 page by page (2026-11-03): T1
+(3) + T2 (40) + T5 (5) + T7 (12) + T8 (19) + T9 (2) + T10 (2) = **83 of 141 audited pages**
+concretely mapped to one of the 7 templates. The other 58 are legal pages (CBS's, structurally
+thinner than CEDES's — see T2), duplicate/alias cards, sub-heading "pages" that aren't real
+separate URLs, flipbook documents (module #23, not a page template), a 2-instance "Values Card
+Grid" pattern (CBS 5 B's + CEDES Nuestra Ética), and 9 genuinely one-off pages that don't match
+any of the 7 shapes — see `plantillas.md` → Pendiente for the full list and the open question of
+what to do with them. ⚠️ Flagged, not resolved: T2 and T8 both contain "school stage /
 curriculum" pages (CEDES's Primaria/Secundaria/Bachillerato vs CBS's EYFS/Primary/Secondary/Sixth
 Form) built in two incompatible as-is shapes today. Unlike Home (already validated as one shape
 across all 3 colegios), this page type has NOT converged — picking the future standard shape (or
@@ -216,31 +254,118 @@ here.
   mismo contenido real, dos moldes incompatibles hoy. Hay que elegir cuál gana (o diseñar uno
   nuevo) para que los 21+ coles futuros usen todos la misma plantilla aquí, igual que ya se validó
   con Home. Flaggeado en Figma (filas T2, T8 y el bloque de conclusión del frame) — no resuelto.
-- Añadir capturas de ejemplo a las 5 filas del frame institucional (`6:2`) — solo se ha hecho en
-  Coles Piloto por ahora, a petición explícita.
-- **Completar T2 en `3b`:** solo están las 9 páginas explícitamente nombradas (CEDES Nuestra
-  Historia, CEDES Proyecto Educativo y Currículo, CBS Carta del Director, CBS Ideario, CBS Acerca
-  de Ariston Education, CEDES Quiénes somos, CEDES Primaria/Secundaria/Bachillerato). Las "+16 más
-  entre CEDES y CBS" del total ~25 no están desglosadas por nombre en ningún sitio — no se han
-  inventado cuáles son. Si hacen falta, hay que volver a los 110 cartões de CBS+CEDES y reclasificar
-  cuáles encajan en T2 (contenido simple, sin tabs/listing/admisiones/actividad/login) antes de
-  añadir sus capturas.
+- ~~Añadir capturas de ejemplo al frame institucional~~ — hecho 2026-11-03: columna "EXAMPLE"
+  añadida a las 6 filas de `6:2` (Home, Who we are, Leadership Team, Find a School, Insights,
+  Global Student Advisory Board), mismo patrón que Coles Piloto.
+- ~~Completar T2~~ — hecho 2026-11-03: 46 páginas (9 CEDES/CBS originales + 31 CEDES/CBS
+  verificadas + 6 de Alminar) verificadas una por una contra su secuencia real de módulos, no por
+  nombre, y reflejadas en Figma (fila T2 + `3b`) y arriba.
+- **Las 3 páginas de servicio sin plantilla (CBS Uniforme escolar, CBS/CEDES Transporte, CEDES
+  Políticas Escolares) y las 3 legales de CBS NO son huérfanas sueltas — son el lado "pobre" de
+  una divergencia ya confirmada 3 veces** (etapa/currículo, legal, y ahora servicio): Alminar
+  escribe un Content Block de verdad antes de sus listas; CBS/CEDES muchas veces no. Misma
+  decisión de Fase 2 que las otras dos — no resuelto aquí, solo dejado de clasificar hasta que se
+  decida el estándar.
+- **Las 5 páginas realmente huérfanas, y si encajarían en otro formato trabajándolas distinto**
+  (pregunta de la propietaria del proyecto, 2026-11-03) — comprobado módulo por módulo: las 5
+  podrían pasar a T2 sin inventar nada nuevo, **con un único cambio: añadirles un párrafo de
+  introducción (Content Block)** delante de lo que ya tienen. Ninguna necesita un módulo que T2 no
+  contemple ya:
+  - CBS Historia del CBS — tiene Timeline (ya opcional en T2 del lado institucional) → con intro, T2
+  - CBS Sistema de casas — tiene Card Grid + Simple List → con intro, T2
+  - CBS Logros Académicos — tiene Stats Block (ya opcional en T2) + Carousel → con intro, T2
+  - CEDES Instalaciones — tiene Simple List + List of Links-sidebar (ambos ya opcionales en T2) → con intro, T2
+  - CEDES Otros Servicios — tiene Simple List (ya opcional en T2) → con intro, T2
+
+  O sea: no es que falte una 8ª plantilla — es que estas 5 páginas (como las de servicio/legal de
+  arriba) se construyeron sin párrafo de intro en el cole original. En el rediseño, si T2 exige
+  Content Block, estas páginas solo necesitan ese único bloque añadido para encajar sin fricción.
+  No se ha aplicado el cambio (es una recomendación de build, no una reclasificación del as-is) —
+  queda para cuando se trabajen estas páginas en Fase 2/3.
+- **Patrón con 2 instancias, no suficiente para plantilla propia:** CBS "5 B's Valores" y CEDES
+  "Nuestra Ética" son ambas una página de Card Grid de valores sin Content Block — mismo molde,
+  justo 2 casos. Vigilar si aparece una 3ª en otro cole.
+- **Recordatorio para la arquitectura inicial (Fase 2):** el frame `3b` es una galería curada, no
+  el inventario completo — p. ej. T8 solo muestra 2 de las 19 páginas reales de actividad/etapa
+  (Ballet + Danza Urbana como ejemplo, más los 4 Key Stages y Summer Camp) y T2 solo muestra 2 de
+  las 4 Conferencias archivadas. El recuento real por plantilla vive en la tabla de arriba
+  (columna "Páginas" de cada T-fila) y en las cifras de cada plantilla, no en cuántas columnas
+  tiene `3b` — no dar por hecho que son todas al diseñar el sitemap.
+- **13 "páginas" que no son páginas reales**, descontadas de cualquier plantilla (no del total de
+  141 auditadas — ver nota siguiente): 10 son subtítulos dentro de la misma página CEDES "Proyecto
+  Educativo y Currículo" (confirmado en el DOM — sin anchor, sin tab, un visitante solo hace scroll)
+  y 3 son alias/redirects a páginas ya contadas (CEDES "Nuestro Colegio overview"→"school-overview",
+  "Vida Escolar overview"→Comedor Escolar, "Contacto overview"→Contacto Admisiones). **No se han
+  borrado del Page Audit ni renumerado las cards** — se quedan ahí como evidencia de la
+  verificación (cada una documenta por qué no es una página real). Si en algún momento se quiere
+  que el "141 páginas auditadas" de las cabeceras sea 100% páginas reales y distintas, el número
+  correcto sería 128 (141 − 13) — cambio no aplicado, afecta a varias cabeceras/stats a la vez y
+  no se ha pedido.
 - T9 en `3b` solo muestra la pestaña 1 de cada página tabulada (Alminar El Colegio 1/8, Proyecto
   Educativo 1/11) como representativa — el resto de pestañas de cada página está en el Page Audit
   de Alminar, no repetido aquí.
 - **Reconciliar ambos frames en una versión de sistema completo**, contra el presupuesto de
   10-12 plantillas del cliente. T1/T2/T5 ya están alineados en forma entre los dos lados (mismos
   números, secuencias casi idénticas) — la fusión ahí debería ser mecánica. T7-T10 son
-  exclusivamente de coles por ahora.
-- Confirmar si T9 (Long-form Tabbed Page) y T10 (Account Access/Login) generalizan a más coles o
-  se quedan como patrón específico de Alminar/CBS — solo 2 instancias cada una.
-- Actualizar la cifra de "15 módulos catalogados" del frame institucional (desactualizada, el
-  catálogo compartido va por 24) — no tocado todavía porque no se ha pedido.
+  exclusivamente de coles por ahora. **Aplazado explícitamente** (2026-11-03) — se retoma más
+  adelante.
+- ~~Confirmar si T9/T10 generalizan a más coles~~ — cerrado 2026-11-03: no se van a auditar más
+  coles por ahora (decisión explícita de la propietaria del proyecto), así que se quedan
+  confirmadas en 2 instancias cada una con el dato disponible. Si en el futuro se audita otro cole,
+  revisar si aparece una 3ª instancia de cualquiera de los dos.
+- ~~Patrón "Values Card Grid" (CBS 5 B's + CEDES Nuestra Ética)~~ — mismo cierre: se queda en 2
+  instancias, no se audita más por ahora.
+- ~~Actualizar la cifra de "15 módulos catalogados" del frame institucional~~ — hecho 2026-11-03:
+  ahora dice "24 — MODULES CATALOGUED (SHARED CATALOGUE)".
 
 ---
 
 ## Historial
 
+- 2026-11-03 · Se cierran varios pendientes sueltos, dejando aparte explícitamente la
+  reconciliación institucional+coles en un sistema único (aplazada a petición de la propietaria
+  del proyecto, "ahora lo hacemos después"): (1) columna "EXAMPLE" añadida a las 6 filas del frame
+  institucional (`6:2`), mismo patrón que coles — el frame crece de 1168 a 1368px vía auto-layout,
+  sin tocar nada a mano; (2) cifra de módulos del frame institucional corregida de "15" a "24
+  (shared catalogue)"; (3) T9/T10 y el patrón "Values Card Grid" se cierran como "2 instancias
+  confirmadas, no se audita más" ya que no habrá más auditoría de coles; (4) se documenta que el
+  "141 páginas auditadas" incluye 13 cards que no son páginas reales (ya detectado antes) — no se
+  renumera ni se borra nada, solo se dice cuál sería el número correcto (128) si algún día se
+  quiere ese nivel de precisión.
+- 2026-11-03 · Tras completar T2, se revisan también las 8 páginas de Alminar que seguían sin
+  clasificar (fuera del alcance original "+16 de CEDES y CBS"): 6 tienen Content Block real y
+  pasan a T2 (Comedor, Transporte escolar, Uniformidad, Aula matinal, Políticas escolares, Etapas
+  educativas) — T2 pasa de 40 a 46 páginas. 1 (Extraescolares) ya estaba correctamente excluida
+  (es un PDF externo, no una página web). 1 (Gabinete de Psicología y Logopedia) usa el módulo de
+  pestañas #24 pero con bloques extra que T9 no define — se flaggea en la fila T9 sin sumarla como
+  instancia. Comparando Alminar vs CBS/CEDES para el mismo tipo de página aparece un **3er caso de
+  la misma divergencia** ya vista en etapa/currículo y en legal: Alminar escribe Content Block
+  antes de sus listas de servicio, CBS/CEDES muchas veces no — flaggeado en la fila T2 de Figma y
+  en Pendiente, igual que los otros dos casos. La propietaria del proyecto pregunta si las 5
+  páginas realmente huérfanas podrían encajar en otro formato trabajándolas distinto: se comprueba
+  módulo por módulo que las 5 ya usan únicamente módulos que T2 contempla como opcionales (Timeline,
+  Stats Block, Simple List, List of Links) — solo les falta el párrafo de introducción (Content
+  Block) que si se añadiera en el rediseño, encajarían en T2 sin inventar nada. Recomendación
+  dejada en Pendiente para Fase 2/3, no aplicada al as-is. También se recorta el frame `3b`
+  (propietaria del proyecto, directamente en Figma): T8 de 19 a 7 columnas (2 ejemplos de
+  actividad + los 4 Key Stages + Summer Camp) y T2, por el mismo criterio, de 4 a 2 Conferencias
+  archivadas — galería representativa, no inventario completo; aviso añadido en Pendiente para que
+  no se pierda de vista al hacer la arquitectura inicial.
+- 2026-11-03 · Se completa T2 con datos verificados en vez de la estimación "+16 más": se revisa
+  el texto real "MODULES IDENTIFIED" de las 66 páginas de CBS+CEDES que quedaban sin clasificar
+  (no se adivina por nombre). Resultado: 31 páginas nuevas encajan en T2 de verdad (tienen Content
+  Block real) — T2 pasa de 9 a 40 páginas. Por el camino se detectan y corrigen 2 errores: CBS
+  "Programa Educativo (overview)" no tiene Content Block (es Hero+Card Grid, igual que los otros
+  hubs) → movida a T5 (4→5 instancias). CEDES "Puertas Abiertas (Open Days)" tiene el mismo hash de
+  imagen que "Jornada de Puertas Abiertas" (ya en T7) — mismo documento confirmándolo ("Same
+  rendered page as Open Days... confirmed duplicate/alias") → no se añade como instancia nueva,
+  solo se corrige el conteo de T7 de "~16" (estimado) a 12 (verificado), sumando CBS "Preguntas
+  Frecuentes" que sí es nueva. Reflejado en Figma: fila T2/T5/T7 (pills, secuencia, razonamiento)
+  y las 33 columnas nuevas en `3b` (`68:293`). Quedan fuera, flaggeadas en **Pendiente**: 9 páginas
+  que no encajan en ningún template, un patrón de 2 instancias (Values Card Grid), la divergencia
+  CEDES/CBS en páginas legales, y 13 "páginas" que no son páginas reales (subtítulos y alias) y
+  deberían restarse del total de 141 si se quiere que sea 100% páginas reales — nada de esto se ha
+  resuelto, solo documentado para decidir.
 - 2026-11-03 · La propietaria del proyecto señala que T2 y T8 contienen, bajo nombres de template
   distintos, el mismo tipo real de página — "etapa/currículo" (CEDES Primaria/Secundaria/
   Bachillerato vs CBS EYFS/Primary/Secondary/Sixth Form) — y pregunta si eso tiene sentido de cara

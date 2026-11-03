@@ -143,5 +143,10 @@ también las interacciones si el módulo las tiene.
   commitear o pushear a `main`, negarse y crear rama + PR (comando `/subir`). Hay un hook en
   `.githooks/pre-push` que lo bloquea; se activa una vez por clon con
   `git config core.hooksPath .githooks`.
+- **Trabajando varias personas a la vez:** antes de empezar página o módulo nuevo, mirar ramas
+  abiertas (`git fetch origin && git branch -a`, o los PRs abiertos en GitHub) para no coger algo
+  que ya está en marcha. Nombrar la rama con la página o módulo que toca —
+  `fase2/<slug-pagina>`, `fase3/<slug-pagina>`, `modulo/<CAT-NNN-slug>` — así se ve a simple vista
+  quién está en qué sin tener que abrir el PR. Mismo criterio en el repo del kit de módulos.
 - Nunca commitear documentos del cliente (PDF, Word, decks) ni `.env`. Van en Drive/Notion, con una
   línea de referencia en `research/links.md`.
