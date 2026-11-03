@@ -150,40 +150,9 @@ reconciliar duplicados como T1/T2/T5 que existen en los dos lados con forma casi
 
 ## 4 · Catálogo de módulos — limpieza y mapeo al kit
 
-Los 24 módulos que salieron de la auditoría de Ariston, cruzados contra el wireframe-kit (ya
-limpiado esta sesión: 8 módulos nuevos construidos, 2 retirados por redundantes — ver
-`wireframe-kit` commits).
-
-| # | Módulo (Ariston) | Módulo del kit | Nota |
-|---|---|---|---|
-| 1 | Hero | CAT-CAB-001 | |
-| 2 | Contenido media (texto+imagen) | CAT-CON-001 | Variante icono = mismo módulo, cambia el recurso visual |
-| 3 | Grid repetible de tarjetas | CAT-CRD-002 (+ CAT-CRD-003 carrusel, CAT-CRD-001 tarjeta suelta) | |
-| 4 | Bloque de cifras | CAT-CON-005 | |
-| 5 | Banner CTA | CAT-CON-010 | |
-| 6 | Galería de imágenes | CAT-CON-013 | |
-| 7 | Franja de logos | CAT-CON-011 | |
-| 8 | Lista de enlaces | CAT-NAV-006 | Nuevo este round |
-| 9 | Bloque de contacto | — | Sin mapeo 1:1 — se compone con CAT-CON-001 + datos, o CAT-FRM-001 si lleva formulario. 💭 revisar si hace falta ficha propia. |
-| 10 | Bloque social (iconos) | — | Retirado del kit — se compone a mano con CAT-COM-001 cuando haga falta (decisión tuya) |
-| 11 | Formulario | CAT-FRM-001 (+ CAT-FRM-004 si el proceso es multi-paso) | |
-| 12 | Encabezado/navegación | CAT-NAV-001 | |
-| 13 | Widget flotante | CAT-COM-012 | Nuevo este round |
-| 14 | Panel de cookies | CAT-MDL-005 | Nuevo este round |
-| 15 | Footer | CAT-NAV-002 | |
-| 16 | Lista de datos clave | CAT-CON-017 | Nuevo este round |
-| 17 | Lista simple de texto | CAT-CON-009 (marcador "ninguno") | El kit ya no tiene un módulo separado para esto — CAT-CON-009 ya contempla la variante sin icono, cubre el caso igual |
-| 18 | Filtros | CAT-FRM-003 (facetado) / CAT-COM-010 (pills simples) | |
-| 19 | Paginación | CAT-NAV-004 | |
-| 20 | Vídeo embebido (inline) | — | Sin equivalente exacto (CAT-MDL-002 es modal, no inline). Bajo impacto — 1 instancia vista. |
-| 21 | Callout de dato destacado (con fuente) | CAT-CON-003 (sin el campo "fuente") | Ajuste menor de spec si se necesita, no módulo nuevo |
-| 22 | Timeline de hitos con fecha | CAT-CON-008 | |
-| 23 | Visor de documento interactivo (flipbook) | CAT-CON-015 | Nuevo este round |
-| 24 | Contenedor de pestañas heterogéneo | CAT-CON-016 | Nuevo este round — 💭 su necesidad depende de si T9 se mantiene, ver §6 |
-
-**Huecos reales, bajo impacto, no urgentes:** #9 (bloque de contacto sin form) y #20 (vídeo
-inline). No bloquean nada, se pueden resolver componiendo módulos existentes cuando aparezca el
-caso real en Fase 2.
+Movido a `research/as-is/equivalencia-modulos-kit.md` (vive junto a `inventario-modulos.md`, más
+fácil de encontrar desde Fase 2). Dos huecos reales, bajo impacto: bloque de contacto sin
+formulario (#9) y vídeo embebido inline (#20) — no bloquean nada.
 
 ---
 
@@ -263,6 +232,11 @@ páginas por cole y evita mantener el mismo texto en 21+ sitios.
   Módulos [14 ya en el kit / 6 nuevos este sprint / 4 huecos menores], (7) Decisiones y Preguntas
   [cierre, para antes de Fase 2]. A petición explícita: "tengo que ser capaz de presentar a
   alguien". No añade información nueva sobre este documento — es su traducción visual.
+- 2026-11-03 · §4 (catálogo de módulos → kit) movido a su propio documento,
+  `research/as-is/equivalencia-modulos-kit.md`, junto a `inventario-modulos.md` — es material de
+  referencia para Fase 2, no parte de la propuesta de rediseño en sí. Verificado de nuevo código a
+  código contra los índices reales del kit al moverlo. También bajado a Figma (página "Equivalencia
+  — Módulos ↔ Kit").
 - 2026-11-03 · Creado. Primera versión de la propuesta de sistema único (páginas→plantilla,
   módulos→kit), a petición explícita de la propietaria del proyecto: "quiero que pienses mucho y
   muy bien... vamos a máximos... dos estructuras comunes (institucional y coles) desde las que
