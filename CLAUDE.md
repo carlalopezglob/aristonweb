@@ -15,6 +15,32 @@ y guíala por el `README.md`. No empieces a diseñar páginas hasta que eso est�
    hasta saber qué página y qué fase toca.
 3. Si el usuario no lo ha dicho, **preguntar fase y página**: *"¿Fase 2 de qué página?"*.
 
+## Trabajando entre varias personas
+
+No hay (ni hace falta) un documento aparte de "quién está haciendo qué": **las ramas y PRs abiertos
+en GitHub son ese registro** — no pueden quedar desactualizados porque desaparecen solas al
+mergear. Para que sirva como tal:
+
+- **Rama por tarea, no por persona.** Nombrarla con lo que toca: `fase2/<slug-página>`,
+  `fase3/<slug-página>`, `modulo/<CAT-NNN-slug>`, `research/<tema>`. Así se ve de un vistazo en
+  `github.com/.../branches` quién está en qué, sin preguntar.
+- **Antes de empezar algo, `git fetch origin && git branch -a`** (o mirar los PRs abiertos) — para
+  no coger una página, módulo o línea de research que ya está en marcha en otra rama.
+- **Research e insights: se añaden, nunca se reescribe un bloque entero.** Cada hallazgo nuevo es
+  una entrada nueva (fecha + texto) al final de su sección, como ya se hace en `## Historial` —
+  así, aunque dos personas editen el mismo archivo el mismo día, git casi siempre lo mezcla solo.
+  Si una tabla es compartida entre varias líneas de research (p. ej. una tabla página→plantilla),
+  avisar antes de tocarla a la vez — ahí sí puede haber conflicto real de mezclar a mano.
+- **Módulos nuevos (catálogo del proyecto o del kit): mismo riesgo, pero peor** — dos números de
+  catálogo no se pueden "mezclar", hay que renumerar uno. Por eso, antes de asignar el siguiente
+  número libre de una categoría (ver "Catálogo de módulos" abajo), `git fetch` y mirar si alguien
+  ya se adelantó en otra rama.
+- **Commitear y pushear seguido**, no acumular días de trabajo en local — cuanto menor el lapso,
+  menor el riesgo de choque y más fácil de resolver si lo hay.
+- Un conflicto de git nunca pierde contenido en silencio: lo marca explícito
+  (`<<<<<<<` / `=======` / `>>>>>>>`) y se resuelve a mano, normalmente quedándote con las dos
+  partes.
+
 ## Las tres fases — qué lee Claude en cada una
 
 | Fase | Input que se carga | Output |
@@ -59,7 +85,9 @@ CTA) → variante. Cambia el layout o la jerarquía → módulo nuevo.
 **Crear un módulo, paso a paso:**
 1. Comprobar que no existe ya algo similar (leer el índice de la categoría, no las specs)
 2. Comprobar si el kit externo ya lo tiene (ver más abajo) antes de construirlo de cero
-3. Asignar el siguiente número libre de la categoría
+3. **Antes de asignar número:** `git fetch origin` y mirar ramas/PRs abiertos — dos números no se
+   pueden mezclar como un párrafo de research, si alguien ya se adelantó en la misma categoría hay
+   que renumerar. Asignar el siguiente número libre de la categoría
 4. Escribir la spec en `docs/_registry/<CAT>/<CAT>-NNN-nombre-en-kebab.md` (plantilla:
    `_guias/plantilla-modulo.md`) — Anatomía, Variantes, Comportamiento responsive, Notas para UI
 5. Construir el HTML standalone en `output/modules/<CAT>/<mismo-nombre>.html`
@@ -143,10 +171,7 @@ también las interacciones si el módulo las tiene.
   commitear o pushear a `main`, negarse y crear rama + PR (comando `/subir`). Hay un hook en
   `.githooks/pre-push` que lo bloquea; se activa una vez por clon con
   `git config core.hooksPath .githooks`.
-- **Trabajando varias personas a la vez:** antes de empezar página o módulo nuevo, mirar ramas
-  abiertas (`git fetch origin && git branch -a`, o los PRs abiertos en GitHub) para no coger algo
-  que ya está en marcha. Nombrar la rama con la página o módulo que toca —
-  `fase2/<slug-pagina>`, `fase3/<slug-pagina>`, `modulo/<CAT-NNN-slug>` — así se ve a simple vista
-  quién está en qué sin tener que abrir el PR. Mismo criterio en el repo del kit de módulos.
+- **Trabajando varias personas a la vez:** ver "Trabajando entre varias personas" al principio del
+  documento. Mismo criterio en el repo del kit de módulos.
 - Nunca commitear documentos del cliente (PDF, Word, decks) ni `.env`. Van en Drive/Notion, con una
   línea de referencia en `research/links.md`.
