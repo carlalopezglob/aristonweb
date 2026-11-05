@@ -28,8 +28,8 @@
 
 ## 1 · Estructura Institucional — página → plantilla
 
-9 páginas hoy, ya es un sistema único (un solo sitio, no hay que deduplicar entre coles). La
-lectura de rediseño aquí es más ligera.
+9 páginas auditadas hoy, ya es un sistema único (un solo sitio, no hay que deduplicar entre
+coles). La lectura de rediseño aquí es más ligera.
 
 | # | Página | Plantilla | Nota |
 |---|---|---|---|
@@ -42,8 +42,10 @@ lectura de rediseño aquí es más ligera.
 | 7 | Find a School | **T4 · Directory — Schools** | |
 | 8 | Insights | **T5 · Listing** | |
 | 9 | News & Events | **T5 · Listing** | Mismo molde que Insights — candidata fuerte a fusionarse en una sola sección de listado con filtro por tipo. |
+| 10 | Legal / Privacidad / Cookies | **T2 · Content Page** | 💭 No cuenta en el "9" del as-is porque no existe hoy — el footer anuncia estos enlaces pero ninguno lleva a destino real (`institucional.md`, "Pendiente"). Se añade aquí porque el sistema propuesto sí la necesita. |
 
-**Plantillas institucional: 5** (T1, T2, T3, T4, T5 — T6 resuelto, se fundió en T2).
+**Plantillas institucional: 5** (T1, T2, T3, T4, T5 — T6 resuelto, se fundió en T2). La página 10
+usa T2, no suma plantilla nueva.
 
 ---
 
@@ -173,6 +175,11 @@ formulario (#9) y vídeo embebido inline (#20) — no bloquean nada.
    Solidario de CEDES o el Globot de CBS), **o es mejor un listado único de "Programas"?**
 7. **¿Uniforme, transporte, aula matinal — cuáles de estos servicios ofrecéis?** (🏫, determina qué
    páginas condicionales activar por cole)
+8. **¿Queréis destacados/avisos (admisiones abiertas, noticia destacada...) junto al header o al
+   hero, visibles en varias páginas a la vez?** — si es contenido propio del hero (badge, CTA
+   secundario), es variante del módulo Hero; si es independiente y persiste entre páginas, hace
+   falta un módulo nuevo (el catálogo actual no tiene nada equivalente). Surgió al priorizar qué
+   módulos puede empezar a explorar UI.
 
 ---
 
@@ -222,8 +229,74 @@ páginas por cole y evita mantener el mismo texto en 21+ sitios.
 
 ---
 
+## 7 · Ideas de rediseño nacidas de E1 — para validar con cliente
+
+Propuestas de GUT, no hallazgos — cada una nace de un finding concreto de la sesión en vivo de E1
+(`entrevistas.md` §3, `hallazgos.md` v2.5). Ninguna está decidida; se listan para que el equipo las
+valore antes de llevarlas a cliente o a Fase 2.
+
+- **Find a School persistente en cabecera**, con mapa y filtros, y modo "comparar" neutro (que
+  aparezcan los colegios, no una tabla) en ciudades con varios colegios del grupo. Nace de: Paz
+  pide la propuesta de valor en primera pantalla + Find a School como acción principal; referencias
+  GEMS y Bright Horizons.
+- **Barra de pertenencia en las webs de colegio**: franja fina de Ariston con vuelta al grupo, no
+  una capa de navegación — distinto de la pregunta 8 de §5 (esa es sobre destacados/avisos en el
+  header o hero del *grupo*; esto es sobre cómo el *colegio* enlaza de vuelta a Ariston). Nace de:
+  modelo de dos niveles de navegación, referencia Four Seasons.
+- **Audiencias secundarias sin recorrido propio**: talento ("Unirse a Ariston") y prensa en footer
+  y menú secundario, cada una con destino claro. Nace de: audiencias priorizadas, acuerdo de
+  sesión.
+- **Componente "Respaldado por Ariston" en dos tamaños**: sello obligatorio en footer + módulo
+  opcional "qué aporta Ariston a este colegio". 💭 posible módulo nuevo o variante — no está en el
+  catálogo de 24 hoy, revisar contra `equivalencia-modulos-kit.md` si se decide construirlo.
+- **Sistema de diseño por capas** (base Ariston + capa de colegio: wordmark, icono, color, foto,
+  narrativa), a probar con un colegio de color identitario fuerte (Paulo VI), uno heredado (CEDES)
+  y uno británico — **esto lo tiene que explorar UI en una futura reunión**, nota tomada en sesión.
+- **Narrativa propia de cada colegio como contenido estructurado**: unos pocos campos por centro
+  (frase que lo define, qué lo hace distinto, cómo se vive, foto de portada), reutilizados en la
+  home del colegio, su tarjeta del buscador y su "About". Evita que 21+ colegios con la misma
+  plantilla suenen igual. Sin decidir dónde vive ese contenido (¿el cole, el currículo...?).
+- **Visual más claro**: base más clara y menos masas oscuras que la web actual (Nerea), jerarquía
+  tipográfica, menos texto, interacciones gráfico-foto con medida.
+- **Sección de pilares + componente "prueba" reutilizable**: una sección que explique AI Fluency /
+  Human Power Skills / Student Voice en lenguaje de familia, y un componente de prueba (historia
+  real, cita, dato, imagen, etiquetado por pilar) repetible en home, colegios e Insights. Aplica
+  "prueba antes que promesa" (David) — **requiere que Ariston aporte historias reales por pilar,
+  que hoy no existen.** 💭 posible módulo nuevo, no está en el catálogo hoy.
+- **Regla editorial "IA siempre con lo humano"**: ningún módulo, titular o historia habla de IA sin
+  su contraparte humana al lado. Nace de: tensión de los 3 pilares sin orden compartido, ya
+  registrada en `hallazgos.md` v2.5.
+- **Cifras con fuente única**, gestionadas en un sitio y pintadas en toda la web — nace directo del
+  hallazgo de cifras inconsistentes (19/21/22 colegios según quién responda).
+- **Primera pantalla de la home de grupo**: una sola frase en lenguaje de familia + buscador justo
+  debajo, sin carrusel ni vídeo que retrase la tarea principal. Nace de: la "una tarea" de Paz.
+- **CTA fijo + formulario estándar breve y mobile-first** por colegio, con campos opcionales por
+  región, siempre a un clic; formularios en vez de email, con validación/CAPTCHA/RGPD integrados.
+  Detalle de campos pendiente de E2.
+- **Sistema de imagen sin rostros como tratamiento gráfico, no como carencia disimulada**: espacios,
+  manos, detalles, trabajos de alumnos, planos generales; etiqueta "imagen generada con IA" como
+  componente visible y consistente.
+- **Guía de fotografía para colegios** como posible entregable del proyecto, construida con Mauro
+  (que ya la está armando) — encuadres, luz, qué no fotografiar, consentimientos, pensada para
+  equipos sin fotógrafo propio.
+- **DAM con consentimiento, caducidad y origen IA por imagen** — si un DAM completo no entra en
+  alcance, al menos esos 3 campos en el gestor de medios del CMS. Nace directo del hallazgo de
+  imagen de `hallazgos.md` §3/v2.5.
+- **Diseñar con las imágenes reales de los pilotos desde el primer wireframe de alta** — no esperar
+  a tener fotografía definitiva para empezar a maquetar.
+- **Roles de CMS que reflejen central/colegio**, con flujo de "pedir módulo nuevo" y guía de tono
+  breve — formaliza la gobernanza ya confirmada (Global MAC vs. colegios).
+- **Multi-campus**: una web por colegio con selector de campus (no una web por campus) — propuesta
+  a validar, caso de prueba BIC (2 campus).
+
+---
+
 ## Historial
 
+- 2026-11-03 · Añade §7, ideas de rediseño nacidas de la sesión en vivo de E1 — son propuestas de
+  GUT para validar, no hallazgos, por eso van en un documento distinto de `hallazgos.md`. 2 ideas
+  marcadas como posible módulo nuevo (componente "Respaldado por Ariston", componente "prueba"
+  reutilizable) — no se construyen todavía, solo quedan flaggeadas.
 - 2026-11-03 · Bajado a Figma como deck presentable: página nueva "Propuesta — Resumen Ejecutivo"
   (`162:2`) en el mismo archivo, 7 frames apilados — (1) Dónde estamos [cifras clave], (2) Cómo
   vamos a unificar [metodología con ejemplo antes/método/después], (3) Sistema Institucional
@@ -232,6 +305,10 @@ páginas por cole y evita mantener el mismo texto en 21+ sitios.
   Módulos [14 ya en el kit / 6 nuevos este sprint / 4 huecos menores], (7) Decisiones y Preguntas
   [cierre, para antes de Fase 2]. A petición explícita: "tengo que ser capaz de presentar a
   alguien". No añade información nueva sobre este documento — es su traducción visual.
+- 2026-11-03 · Añade pregunta 8 a §5 (destacados/avisos junto a header o hero) — surgió al revisar
+  con Carla qué 5 módulos puede empezar a explorar UI sin esperar a cerrar las decisiones de §6;
+  Header y Hero quedan como seguros para empezar igualmente (la estructura base no depende de la
+  respuesta, el destacado se añadiría después sin rehacer lo ya resuelto).
 - 2026-11-03 · §4 (catálogo de módulos → kit) movido a su propio documento,
   `research/as-is/equivalencia-modulos-kit.md`, junto a `inventario-modulos.md` — es material de
   referencia para Fase 2, no parte de la propuesta de rediseño en sí. Verificado de nuevo código a
@@ -247,3 +324,7 @@ páginas por cole y evita mantener el mismo texto en 21+ sitios.
   duplicación de "Sobre Ariston Education"). No resuelve ninguna de las decisiones abiertas — las
   deja explícitas en §6 para que se decidan, con preguntas concretas para consultar a los coles en
   §5.
+- 2026-11-04 · Añadida fila 10 a §1 (Legal / Privacidad / Cookies, T2) — no estaba en el "9" del
+  as-is porque institucional no tiene hoy una página real a la que auditar (enlaces del footer sin
+  destino, ver `institucional.md`), pero el sistema propuesto la necesita. No suma plantilla
+  nueva.

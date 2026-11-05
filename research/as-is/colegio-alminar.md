@@ -169,12 +169,12 @@ con destino a documento).
 
 ## Pendiente
 
-- Confirmar si el bloque de contenido duplicado (Inteligencia emocional /
+- ~~Confirmar si el bloque de contenido duplicado (Inteligencia emocional /
   Proyecto Da Vinci) dentro del panel "Departamento de orientación" de
-  Proyecto Educativo sigue presente — no se re-verificó en la pasada del
-  2026-10-28, que se centró en el recuento de pestañas.
-- Confirmar campos reales del formulario de Admisiones (sigue sin
-  capturarse por texto).
+  Proyecto Educativo sigue presente~~ — **resuelto 2026-11-04**, ver
+  Historial.
+- ~~Confirmar campos reales del formulario de Admisiones~~ — **resuelto
+  2026-11-04**, ver Historial.
 
 ## Historial
 
@@ -203,3 +203,15 @@ con destino a documento).
   páginas de Alminar en el frame: 13 → 30 (13 − 2 + 8 + 11), renumerado de
   punta a punta ("ALMINAR — PAGE N/30"), de paso corrigiendo una
   inconsistencia previa (varias tarjetas mostraban "/12" en vez de "/13").
+- 2026-11-04 · Pasada visual con clic real en `/proyecto/` y
+  `/admisiones/`. **Bloque duplicado confirmado, y es más grave de lo
+  descrito:** "Inteligencia emocional" y "Altas capacidades (Proyecto Da
+  Vinci)", dentro del panel "Departamento de orientación", no solo repiten
+  el tema — tienen el **mismo texto exacto** (la cita de Daniel Goleman
+  sobre competencia emocional), probablemente un copia-pega del cliente
+  sin terminar de editar uno de los dos bloques. **Formulario de
+  Admisiones capturado:** Nombre, Apellidos, Teléfono, Email, Nombre
+  Hijo/a, Fecha de Nacimiento, Curso para el que solicita información
+  (desplegable), checkbox de aceptación de política de privacidad/aviso
+  legal + reCAPTCHA. Es un formulario nativo embebido (no Google Forms),
+  un solo paso — confirma `CAT-FRM-001` sin necesidad de `CAT-FRM-004`.

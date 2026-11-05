@@ -109,3 +109,15 @@ diferencia de la historia de CEDES (que no la tenía).
 - Páginas de detalle: artículos de Insights y de News & Events individuales
   (no auditadas, probablemente mismo patrón de página de artículo).
 - Pasada visual (capturas) en cuanto el navegador funcione.
+- **Hallazgo — enlaces legales del footer sin destino real.** El footer anuncia
+  "privacy policy, cookie policy, legal policy, consent preferences" (línea
+  50) pero ninguno lleva a una página real — por eso las 9 páginas
+  institucional auditadas no incluyen legal/cookies, no es un olvido: no hay
+  nada que auditar. El sistema propuesto sí necesita esa página (ver
+  `propuesta-sistema.md` §1, fila 10) aunque no cuente en el "9" del as-is.
+
+## Historial
+
+- 2026-11-04 · Registrado el hallazgo de los enlaces legales del footer sin
+  destino real, surgido al explicarle a Carla por qué el conteo de páginas
+  institucional es 9 y no incluye legal/cookies.

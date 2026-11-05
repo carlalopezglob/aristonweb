@@ -197,10 +197,10 @@
 
 ## Pendiente
 
-- Confirmar campos reales del formulario de Solicitud de Información
-  (sigue sin capturarse por texto — pendiente pasada visual o acceso
-  directo del cliente).
-- Pasada visual (capturas) en cuanto el navegador funcione.
+- ~~Confirmar campos reales del formulario de Solicitud de Información~~ —
+  **resuelto 2026-11-04**, ver Changelog.
+- ~~Pasada visual (capturas) en cuanto el navegador funcione~~ —
+  **resuelto 2026-11-04**, ver Changelog.
 - ~~Capturas reales de las 5 tarjetas nuevas de sección de Admisiones~~ —
   **resuelto 2026-10-28** (pasada posterior, mismo día): capturadas las 5
   con el acordeón expandido panel a panel (Queremos conoceros, Solicitud
@@ -331,3 +331,13 @@
 
   **Renumeración completa:** 66 → 70 tarjetas (`CBS — PAGE n/66` →
   `CBS — PAGE n/70`), 4 tarjetas nuevas numeradas 67-70/70.
+- 2026-11-04: Pasada visual de `/solicitud-informacion/`. **Hallazgo
+  nuevo:** el formulario es un **Google Form embebido, multi-paso
+  (página 1 de 2)** — no un formulario nativo. Página 1 capturada: Nombre
+  completo del padre/madre/tutor, Teléfono, Nombre completo del alumno/a,
+  Fecha de nacimiento del hijo/a, Curso/año de inscripción (desplegable),
+  Centro educativo de procedencia, Cómo conoció CBS (desplegable),
+  Observaciones (texto libre). No se avanzó a la página 2 para no forzar
+  el flujo del formulario real del cliente. Corrige el módulo a
+  `CAT-FRM-004` (multi-paso), no solo `CAT-FRM-001`. Home revisado
+  visualmente, coincide con lo documentado por texto.

@@ -22,6 +22,34 @@ Una plataforma multi-tenant (`aristonedu.com` + `/<cole>`) con **10-12 plantilla
     unirse al grupo deben poder contactar, pero "la web debe cuidarse en cómo reflejar esto, ya
     que no queremos parecer un agregador de colegios" — esta ruta secundaria debe quedar
     claramente subordinada a las familias, no competir visualmente con ellas.
+  - **Confirmado y ampliado en la sesión en vivo de E1 (30 oct 2026, 60 min — Mauro Bisso, David
+    Vindel, Nerea Lorenzo, Paz Guadamillas):** el grupo coincide en una sola tarea para la web
+    corporativa — que la familia entienda qué es Ariston y **llegue a la web de su colegio en el
+    menor número de clics posible**. "Find a School" tiene que estar visible desde cualquier
+    página, con filtros de país/ciudad/etapa/currículo/idioma, y la propuesta de valor va en la
+    primera pantalla. **"La web del grupo no debe competir con la del colegio por la conversión"
+    (Paz)** — la corporativa descubre y deriva, el colegio convierte; coincide con el hallazgo ya
+    registrado de recorrido de admisiones (§2.1).
+  - **Audiencias priorizadas explícitamente (Nerea, Paz):** 1) familias que valoran un colegio;
+    2) colegios/partners que podrían unirse al grupo; 3) talento docente y corporativo; 4)
+    inversores y medios — estas dos últimas no condicionan el tono ni la experiencia principal,
+    van a footer/menú secundario con destino propio.
+  - **Cómo se descubre Ariston, en la práctica:** la familia llega a Ariston desde el footer del
+    colegio y desde espacios físicos, no al revés — las campañas de captación son de cada colegio,
+    en su propio nombre, nunca del grupo (Nerea). Las notas de prensa sí comunican como Ariston.
+  - **Recorridos de navegación diferenciados por audiencia: sin resolver.** Paz los pide (rutas
+    secundarias por tipo de visitante); Nerea no ve la necesidad. Se acordó resolverlo por el
+    propio modelo de navegación del sistema, no como una decisión aparte. Los perfiles de familia
+    detallados quedan pospuestos a la sesión E2.
+  - **El buscador "Find a School" tiene casos de producto concretos que resolver, no solo diseño
+    visual:** varios colegios del grupo comparten ciudad (Doha, Tirana, Sevilla, Estado de México)
+    — el buscador necesita ayudar a comparar entre ellos, en modo neutro (que aparezcan los
+    colegios, no una tabla comparativa). Y hay colegios con más de un campus bajo el mismo nombre
+    (BIC: Sant Agustí y Sa Porrassa) — la propuesta del cliente es **una web por colegio con
+    selector de campus, no una web por campus**, pendiente de validar. Agrupar por localización es
+    lo habitual, aunque también se agrupa por currículo. Colegios en proceso de M&A (adquisición)
+    son confidenciales hasta el cierre — deben poder contactar sin que la web parezca un
+    agregador, mismo matiz que el ya registrado arriba.
 - El grupo tiene **drivers muy distintos por mercado**: Budapest es 80% familias expatriadas, Albacete (CEDES) 90% locales — el cliente ya lo sabe y lo ha identificado como riesgo de diseño (ver §3).
 - **Encuesta real de percepción tras el anuncio de la unión a Ariston** (`Ariston_Perception_Insights_schools_1stlaunch_wave.pdf`, 13 coles / 5 regiones, Heads of School + MAC leads, 22 sep–7 oct 2026) — no es una entrevista de Sprint 0, es investigación de mercado ya cerrada del cliente:
   - **Personal muy favorable (70% positivo), familias más cautas (55% positivo)** — ningún cole reportó reacción negativa, pero la mitad de las familias están "indiferentes o a la espera".
@@ -30,6 +58,20 @@ Una plataforma multi-tenant (`aristonedu.com` + `/<cole>`) con **10-12 plantilla
   - **Baja notoriedad de marca, confirma la prioridad de SEO/GEO ya registrada en §2:** en 1 cole, búsquedas online de "Ariston" antes de la comunicación oficial devolvían resultados no relacionados y alimentaban especulación.
   - Otros temas recurrentes: fatiga por cambios (reestructuraciones/cambios de dirección coincidiendo con la adquisición, 3 coles), preocupación por ratio/tamaño de clase y apoyo SEND (2 coles), estabilidad a largo plazo ante cierres en el mercado local (1 cole). Tono que genera confianza: "cercano, no corporativo" (2 coles) — coincide con el tono "humano, no corporativo" ya pedido en la guía de marca y en la encuesta E1.
 - Posicionamiento declarado: un escalón por debajo de grupos como North Anglia/Cognita (centrados en expats), apuntando sobre todo a **familias locales** — aunque los coles heredados de adquisiciones previas (p. ej. red "Orbital") todavía se posicionan como "colegio internacional" y hay que reconducirlos.
+
+- **Matiz sobre el perfil "local" en AME, corregido en vivo por el propio cliente (sesión E2,
+  Emmanuel Franco):** no es que el usuario mexicano busque poco por sí mismo — es que **no se fía
+  de lo que lee y busca confirmación activa** por canal conversacional, incluso cuando la
+  información ya está disponible ("les puedes poner la dirección en una publicidad y de todas
+  formas te van a preguntar dónde están ubicados"). El driver real es confianza/verificación, no
+  pereza — cambia la solución de diseño (reforzar confirmación visible, no solo simplificar
+  contenido).
+- **Trabajo de síntesis de audiencias en marcha, confirmado por el propio equipo de UX Research en
+  la sesión E2 (Begoña):** tras E1+E2 (encuestas + sesiones en vivo), se van a destilar 4-5 perfiles
+  generales de audiencia y se enviarán al cliente para validar antes de construir las entrevistas
+  de usuarios sintéticos (E3, 6 nov) — Jaime se comprometió a enviar un documento propio de "Parent
+  Persona" por colegio de EMEA (pendiente de recibir, candidato más fiable que inferir solo de la
+  conversación).
 
 **Preguntas sin responder:**
 - ¿El sistema debe ser multi-idioma desde el día uno? La institucional ya tiene EN/ES; el diseño tiene que soportar también árabe (RTL) y alemán (palabras compuestas largas) aunque ningún piloto actual use esos idiomas — lo pidió el propio cliente en el kickoff.
@@ -50,15 +92,28 @@ Una plataforma multi-tenant (`aristonedu.com` + `/<cole>`) con **10-12 plantilla
   - Institucional (aristonedu.com): 52% del tráfico es "Direct" (probablemente interno/sin etiquetar — hay que filtrarlo desde el día uno) y ya hay un 2,6% de sesiones vía asistentes de IA con la sesión más larga de todas (105s) — **hay que diseñar contenido pensando también en GEO** (structured data, headings claros, hechos citables por cole), no solo en SEO clásico.
 - **Benchmark de competencia (6 grupos):** Nord Anglia es el más "templado" (nav idéntica en toda la red, CTA persistente, logo de grupo como trust anchor); GEMS es el más fuerte en transparencia de admisiones (tarifas, urgencia, referidos); ningún grupo —ni propio ni competidor— ha resuelto breadcrumbs. La sección más débil en los grupos propios del cliente es, de forma consistente, **Parents Area** (sin segmentar, duplicada entre menús).
 - **Referencias de diseño del propio cliente, fuera del sector educativo, con el mismo modelo
-  `dominio/sub-sitio` propuesto** (encuesta previa E1, Paz Guadamillas): **Four Seasons**
-  (plantilla común + expresión local por hotel, CTA de reserva siempre a mano — el paralelismo
-  más directo con `aristonedu.com/colegio`), **Equinox** (fichas de club con plantilla común, CTA
-  principal siempre visible), **Bright Horizons** (grupo de escuelas infantiles, público similar —
-  buscador de centro por cercanía siempre en cabecera). Dentro del sector, el cliente también cita
-  **GEMS Education** (buscador completo con mapa/país/currículo) y **SEK Education Group** (cada
-  cole con web propia dentro de un sistema visual común); Nerea añade **Nord Anglia** como su
-  preferida. Candidatas a moodboard de la fase de Diseño.
+  `dominio/sub-sitio` propuesto** (confirmado en la sesión en vivo de E1, Paz Guadamillas —
+  ampliando lo ya apuntado en la encuesta previa): **Four Seasons** (plantilla común + expresión
+  local por hotel, CTA de reserva siempre a mano, "reservar siempre a mano" — el paralelismo más
+  directo con `aristonedu.com/colegio`), **Equinox** (fichas de club con plantilla común, CTA
+  principal siempre visible, "Join Today"), **Bright Horizons** (grupo de escuelas infantiles,
+  público similar — "Find a Center" siempre en cabecera, buscador por cercanía, la marca como
+  garantía). Dentro del sector, el cliente también cita **GEMS Education** (buscador completo con
+  mapa/país/currículo, red bajo un sistema) y **SEK Education Group** (cada cole con web propia
+  dentro de un sistema visual común); Nerea añade **Nord Anglia** como su preferida. Criterio
+  explícito del cliente para elegir referencia: "experiencia común orientada a conversión donde el
+  grupo se reconozca sin restar protagonismo al centro" — y ningún entrevistado dio como ejemplo
+  una web a la que *no* quieran parecerse. Candidatas a moodboard de la fase de Diseño.
 - **El propio cliente arrastra al menos 3 plantillas heredadas distintas** (Orbital, Merited, CBS como grupos representativos de su cartera) — es la prueba de que sin un sistema único, cada adquisición añade una plantilla más. Es literalmente el problema que este proyecto resuelve.
+- **Valoración de la web actual, directamente de las 4 personas que la encargaron (sesión en vivo
+  E1):** no hay consenso, y eso es dato en sí mismo — Paz la ve como "MVP, el look & feel puede
+  cambiar"; Nerea, "pesada, mucho texto, masas de color oscuras"; Mauro, "limpia y minimalista,
+  mantener — mejorar espaciados, blancos y tipografía, la foto necesita más narrativa"; David
+  reporta que los colegios dicen "wow" al verla. **Lo que falta, según el propio cliente:**
+  buscador más útil y visible (mapa, etapa, idioma), recorridos de navegación claros, más
+  formularios, más módulos, contenido estructurado para SEO/GEO, y que el equipo central pueda
+  gestionar autonomía sin necesitar desarrollo (Paz) — confirma directamente el hallazgo de
+  gobernanza ya registrado en §1 (Preguntas sin responder) y en §3.
 
 ---
 
@@ -94,8 +149,80 @@ Una plataforma multi-tenant (`aristonedu.com` + `/<cole>`) con **10-12 plantilla
 - **Cada cole tiene su propio "Parent Persona"**, a veces distinto incluso entre etapas del mismo
   cole (ej. Albacete: búsqueda directa y fuerte en Bachillerato, más débil en Infantil) — matiza
   aún más el hallazgo ya registrado de drivers distintos por mercado.
-- Pendiente de la sesión en vivo (no respondido aún en el cuestionario): puntos exactos de pérdida
-  de familias en el funnel, métricas/informes de EMEA, comentarios finales de ambas regiones.
+- ~~Pendiente de la sesión en vivo (no respondido aún en el cuestionario): puntos exactos de
+  pérdida de familias en el funnel, métricas/informes de EMEA, comentarios finales de ambas
+  regiones.~~ **Resuelto 2026-11-04** — sesión en vivo E2 celebrada, ver bullets siguientes y
+  detalle completo en `entrevistas.md` §1 ("Síntesis de la sesión en vivo — E2").
+- **⚠️ Matiza un hallazgo ya registrado — el canal "EMEA llamada / AME WhatsApp" no es una
+  diferencia regional estable, es una limitación de tooling con fecha de caducidad (Aniol
+  Javaloyes, Paz Guadamillas):** hoy EMEA no usa WhatsApp porque su CRM actual (HubSpot) no tiene
+  integración nativa y genera "vacíos de información de qué es lo que ha ocurrido con la familia"
+  (Aniol) — no es una preferencia cultural. Al migrar a **Open Apply** (que sí integra WhatsApp de
+  forma nativa), Paz confirma que el canal **"en EMEA va a pasar seguramente en un corto plazo"**.
+  Implicación de diseño: el patrón de CTA de contacto no debe fijarse por región de forma
+  permanente — debe soportar "Enquire now" (formulario) y WhatsApp coexistiendo, no excluyentes
+  ("no debería ser un problema ni un stopper en este momento", Paz).
+- **Restricción legal explícita en EMEA (Aniol, LOPD):** contactar a una familia en España sin
+  checkbox explícito de consentimiento previo es "impensable" — el formulario necesita esa casilla
+  antes de poder contactar. En AME, el problema es el inverso — desconfianza real en dejar datos en
+  un formulario (Carlota: "México no vive la mejor seguridad del mundo... la gente es mucho más
+  desconfiada en llenar un formulario"), motivo por el que un flujo conversacional con un asesor
+  con nombre (WhatsApp) convierte mejor que un formulario frío.
+- **Decisión confirmada sobre el application form de Orbital en EMEA (Paz, Aniol):** hoy ese
+  formulario pesado de aplicación está público en los coles Orbital ("eso es una locura", Aniol) —
+  **decisión: deja de ser público.** El formulario de cara a la web pasa a ser el de
+  inquiry/book a visit (ligero); el application form queda como paso posterior, fuera del
+  recorrido principal — confirma con decisión real, no solo como hallazgo, lo ya registrado sobre
+  el portal externo de Orbital.
+- **Caso real en AME que confirma el mismo patrón desde otro ángulo (Carlota):** al adquirir el
+  colegio Brit, un formulario de aplicación extenso previo a la visita fue identificado como
+  "stopper para la venta" y fue de lo primero que se eliminó.
+- **Métrica real de conversión WhatsApp→CRM en AME (Emmanuel Franco):** entre el 20-30% de las
+  conversaciones de WhatsApp acaban rellenando el formulario (varía por colegio); el resto se
+  resuelve por interacción directa del asesor, que introduce los datos manualmente.
+- **Propuesta de homologación de "lead válido" sin cerrar (Carlota):** 4 campos mínimos para que un
+  contacto cuente como lead en CRM — nombre, teléfono, email + un 4º campo que no logró recordar
+  en sesión. Queda abierto.
+- **⚠️ Tercer actor de gobernanza no contemplado en el modelo ya cerrado de §1/§4 (Carlota, Jaime):**
+  en AME, el reenrollment es responsabilidad 100% del director/Head of School de cada colegio, no
+  del equipo de marketing/admisiones. En EMEA, en cambio, la retención se apoya en contenido propio
+  de la web (blog, newsletter, redes) gestionado por el equipo de comunicación ("la web es parte
+  también de esta parte", Jaime) — el modelo "Global MAC vs. coles" no recoge hoy a la dirección
+  académica del colegio como actor con peso real sobre contenido de retención.
+- **Cifras reales de capacidad/retención, con asimetría fuerte entre regiones:** AME (Carlota) —
+  retención 87-92%, un colegio al 140% de su meta de nuevo ingreso, 44 grupos abiertos/22 ya
+  saturados ("happy problems" de infraestructura, no de demanda). EMEA (Aniol) — rotación
+  significativa ligada a movilidad de familias expatriadas (ej. Mallorca puede perder 40 alumnos de
+  golpe si un gobierno extranjero repatría a sus familias); **sin cifra agregada** — sigue siendo
+  hueco real de dato.
+- **Tour virtual de instalaciones — confirmado fuera de alcance, con pregunta de formato abierta
+  (Oisin, cerrando el tema con Paz/Aniol/Carlota/Jaime):** ni EMEA ni AME tienen uno real hoy (AME
+  tiene algún recorrido puntual "arcaico"; EMEA ninguno, viable quizá en Qatar a futuro por capex).
+  **Decisión:** "Instalaciones" es módulo básico obligatorio, pero un visor 360°/Matterport queda
+  fuera de alcance de este proyecto — el módulo debe admitir incrustar uno después (iframe/widget)
+  si un colegio lo construye por su cuenta. **Sin resolver:** ¿exploración por menú de etapa/aula/
+  instalación (propuesta Paz) o vídeo narrado corto (propuesta Carla) en vez de un visor de flechas
+  360°? Aniol se posiciona en contra del formato de flechas por experiencia propia negativa.
+- **Confirma a nivel de implementación (no solo de estrategia) el modelo masterbrand ya cerrado en
+  §4 (Paz, con el dolor real de Aniol como contraste):** Aniol describe como problema real encajar
+  elementos de marca dentro de la estructura de bloques rectangulares de una web de cole (caso
+  propio, cluster Ágora). Paz confirma el modelo vigente para este proyecto: **plantilla máster con
+  customización a nivel de CSS** (principalmente color) — "todo bebe de la misma estructura de
+  marca".
+- **Ambición de escala cuantificada, refuerza la necesidad de autonomía sin developers ya registrada
+  en §1/§3 (Jaime):** Ariston es hoy ~24-25 coles, objetivo 100 coles en 3-5 años — "la gente que
+  estamos aquí no podemos hacernos cargo de 100 páginas web, van a tener que ser los mismos
+  colegios."
+- **Mayor pain point de AME, de cierre de sesión (Emmanuel Franco):** "la experiencia de usuario...
+  es nuestro pie cojo totalmente" — sitios heredados, estructuralmente arcaicos, con miedo del
+  propio proveedor a tocar el código. Pide que la web se sienta "premium" desde el primer instante.
+- **Advertencia explícita de no usar el as-is de EMEA como referencia de diseño (Aniol):** "no uses
+  el benchmark de las páginas que hay a día de hoy en los coles, por lo menos en los de EMEA... se
+  hicieron varias cagadas" — resultado de errores de un cluster previo (Ágora), no un patrón a
+  conservar.
+- **Pendiente de recibir del cliente:** documento de "Parent Persona" por colegio EMEA (Jaime);
+  ejemplo de competencia de un desplegable "hijo 2" en formulario multi-hijo (Aniol); mecánica
+  técnica concreta de la migración WhatsApp/Open Apply en EMEA (sin fecha).
 
 ---
 
@@ -124,6 +251,14 @@ Una plataforma multi-tenant (`aristonedu.com` + `/<cole>`) con **10-12 plantilla
   funcionar bien sin rostros de alumnos/personal (espacios, actividades, planos generales) al
   menos al principio, y el gestor de activos debe registrar por imagen consentimiento, caducidad
   y si es IA, para poder etiquetarla o retirarla de golpe de todas las webs si hiciera falta.
+  **Ampliado en la sesión en vivo de E1:** el material disponible hoy es lo ya publicado en la web
+  actual más el Hero Film y grabaciones del equipo — son, según Mauro, "lo más cercano a Ariston"
+  que existe. **No hay DAM ni repositorio único de activos** (pregunta de GUT sin respuesta
+  todavía). Migrar a fotografía real depende de producción local y permisos, caso a caso (Mauro).
+  Mauro confirmó en el cierre de la sesión que está preparando una guía propia de cómo fotografiar
+  a los alumnos, pensada para equipos de colegio sin fotógrafo ni diseñador — **se acordó una
+  sesión aparte específica de imagen** (la organiza Carla con Oisin y Alex) ante el riesgo real de
+  "maqueta bonita → web real pobre" sin material que la sostenga.
 - **Calendario:** piloto (corporate + 3 coles) en marzo 2027. **Change freeze abril–junio 2027** (época de exámenes y campañas de admisión — no se puede tocar producción live en esa ventana, solo auditorías read-only). Después, oleadas de ~3 coles al mes.
 - **Modelo de marca: "endorsed brand"** — cada cole mantiene nombre, color de acento e identidad propia dentro del sistema (ya hay ejemplos WIP: World Academy Tirana en naranja, Magno en verde, Britannica en cian, todos con el lockup "A Member of Ariston Education"). Ariston explícitamente NO quiere ser como North Anglia, donde la marca del grupo domina sobre la del cole.
 - **Idioma/RTL:** el sistema de diseño tiene que soportar árabe (right-to-left) y textos largos en alemán, aunque ningún piloto actual los use.
@@ -205,6 +340,89 @@ Una plataforma multi-tenant (`aristonedu.com` + `/<cole>`) con **10-12 plantilla
   sección), nunca como elemento que compita con el contenido. Relevante para la fase de Diseño al
   definir el grid base de las plantillas.
 
+  **Arquitectura de marca confirmada en vivo por las 4 personas de dirección (E1, 30 oct):**
+  modelo **endorser brand**, descrito con las mismas palabras por Mauro, David, Nerea y Paz por
+  separado — "el colegio lidera, Ariston respalda, ambos parte de un mismo sistema". **Dos
+  niveles de navegación** (`aristonedu.com` y `aristonedu.com/colegio`) con transición clara: la
+  familia tiene que saber siempre dónde está y poder volver. "Ariston es sello de confianza, no
+  una capa extra de navegación" (Paz). El grupo aporta visión global, propuesta diferencial y
+  credibilidad de red (conocimiento, formación docente, recursos); el colegio mantiene nombre,
+  identidad, reputación local y propuesta educativa — **Ariston no es la narrativa dominante del
+  colegio** (Nerea). Al pasar de una web a otra tiene que sentirse "una misma familia de ideas",
+  visual y narrativa, aunque cada centro conserve su propia voz (Mauro). Dónde vive Ariston dentro
+  de la web de un colegio: footer y "About Us" (Nerea) — acompañamiento y soporte, el endorsement
+  en el footer, abierto a la recomendación del propio equipo de UX/UI; lo que de verdad importa en
+  la página del colegio es su misión, visión, valores y storytelling (Mauro).
+  - **Intocables vs. abierto a decisión de diseño, dicho explícitamente por el dueño de la marca:**
+    wordmark, icono y patrones no se tocan; el resto depende de la arquitectura UX/UI — "nothing
+    is off the table as long as it makes strategic sense and builds on the system" (Mauro). El
+    sistema visual (paletas y tipografías) es común a nivel de sistema en la mayoría de los casos;
+    narrativa y fotografía varían por colegio (ejemplo citado en sesión: Montessori vs. británico).
+    Caso de prueba apuntado para validar el sistema de capas: un colegio con color identitario
+    fuerte propio (Paulo VI).
+  - **Guía de marca — alcance, plazos y custodia, confirmados en sesión (antes no se sabía):**
+    alcance (David) cubre marca corporativa, colegios endosados y todos los puntos de contacto
+    (web, Insights, redes, prensa, eventos, señalética, admisiones, uniformes, merchandising);
+    usuarios: equipos de comunicación/marketing, directores y admisiones, docentes, agencias;
+    idiomas inglés y español como mínimo, "adaptar, no traducir". Plazos: la guía de colegio está
+    en creación o refresco, disponible a finales de 2027 — **los pilotos entran en marzo 2027 sin
+    guía de colegio todavía**, solo con la de Ariston Corp (acotada, en expansión — se ampliará
+    con lo que se use en esta web y luego pasará a guidelines). Custodia: **no existe brand
+    guardianship formal** — aprueban Paz y Nerea, validando con Mauro (Paz).
+
+  **Propuesta de valor, pilares y cifras — matiz importante de consistencia interna:** el
+  posicionamiento "primer grupo global de colegios nacido en la era de la IA" y el framework
+  AQ = EQ + IQ (rigor académico + inteligencia emocional + competencia en IA) los confirma David
+  explícitamente en sesión. Pero **los 3 pilares (Human Power Skills, AI Fluency, Student Voice)
+  no tienen un orden de prioridad compartido entre los 4 entrevistados** — David pone la IA
+  primero; Nerea prefiere "visión global compartida" e IA práctica/responsable con la persona en
+  el centro; Mauro justifica la disrupción visual precisamente por "la era de la IA". La propia
+  sesión de kickoff ya había avisado de que el claim envejece y de no querer ser "los colegios de
+  la IA" — la salida de David en esta sesión lo confirma: hablar de la IA desde el niño, **"prueba
+  antes que promesa"**. Esto refuerza directamente, con voz del propio cliente, la tensión del
+  pilar AI Fluency ya registrada en §1 (encuesta de percepción: las familias piden menos
+  tecnología, no más). Implicación de contenido: ningún módulo, titular o historia debería hablar
+  de IA sin su contraparte humana al lado.
+  - **Las cifras del grupo no tienen una fuente única — hallazgo de proceso, no solo de dato** (lo
+    señala la propia Nerea, que pide unificarlas): David cita 19 colegios, presencia en EMEA y
+    América, más de 11.000 alumnos; Paz cita 21 colegios, 28 campus, 9 países, regiones AME/EMEA/
+    APAC; el kickoff había dado 22 (19 ya en la web). Mientras no se unifiquen, cualquier cifra que
+    se muestre en la web necesita verificarse contra una fuente acordada, no copiarse de aquí sin
+    más.
+
+  **Personalidad, tono y lo que debe sentir la familia:** frase resumen del propio David —
+  **"aquí mi hijo va a estar preparado para el futuro sin dejar de ser niño"** — tecnología y
+  futuro (AI Fluency) junto a lo humano (Human Power Skills). David describe 3 momentos del
+  recorrido: los primeros 10 segundos piden calidez y confianza ("aquí conocen a mi hijo por su
+  nombre", nunca sensación de centro tecnológico frío ni institución rígida); durante, curiosidad
+  y asombro ("no había visto aprender así", alumnos usando IA con criterio, sin miedo a
+  equivocarse); al salir, seguridad sobre el futuro ("esto le va a abrir puertas"), con una idea
+  concreta del camino de su hijo. Nerea pide que nunca se sienta "pieza de un negocio" ni
+  corporación genérica — y refuerza lo ya registrado: nunca agregador de colegios.
+
+  | Ariston es… | …pero no es |
+  |---|---|
+  | Humana y cercana | Blanda o poco exigente |
+  | Visionaria con la IA | Tecnófila ni fría |
+  | Exigente y ambiciosa | Elitista ni competitiva a cualquier precio |
+  | Serena y segura | Arrogante |
+  | Curiosa y abierta al mundo | Dispersa |
+
+  Tono de escritura, en palabras del propio cliente: actual, cercano, inspirador, con autoridad
+  educativa; accesible, humano y optimista; sin lenguaje corporativo, institucional ni comercial
+  (Nerea). Cálido y claro, sin jerga; historias reales en vez de adjetivos tipo "excelencia" o
+  "innovación" (David). Cada colegio conserva su propio tono dentro del sistema; el grupo puede
+  permitirse ser más disruptivo que otros grupos, en lo visual y narrativo, sin perder lo esencial
+  (Mauro). Referencia de tono: la propia web actual (Paz).
+
+  **Gobernanza de contenido, confirmada (coincide con y cierra la pregunta ya abierta en §1):**
+  el **Global MAC** es dueño de estructura, plantillas, módulos, navegación y estándares de UX/
+  SEO/medición — construye y lanza cada web, y valora e incorpora para todo el grupo cualquier
+  módulo nuevo que se proponga. Los **colegios** publican noticias, eventos, admisiones y fotos
+  sin aprobación central, siempre dentro de las plantillas existentes — **no cambian estructura ni
+  crean módulos nuevos** (Paz, Nerea). El contenido propio de grupo (Insights, News & Events,
+  redes) lo lidera David, con input del MAC y los directores.
+
   Contacto del cliente para dudas de marca: Mauro Bisso, Global Head of Brand
   (mauro.bisso@aristonedu.com) — ya identificado en la encuesta E1 como responsable de
   aprobación on-brand junto a Paz y Nerea.
@@ -235,3 +453,32 @@ Una plataforma multi-tenant (`aristonedu.com` + `/<cole>`) con **10-12 plantilla
   Marketing y Admisiones: hallazgo de que en EMEA la solicitud/matrícula vive en un portal externo
   de Orbital fuera de la web, lo que acota el alcance real de la plantilla de Admisiones al
   enquiry/lead-gen y la visita. Detalle en `entrevistas.md` §1.
+- 2026-11-03 · v2.5 · Incorpora la sesión en vivo de E1 — Dirección del grupo (30 oct 2026, 60 min:
+  Mauro Bisso, David Vindel, Nerea Lorenzo, Paz Guadamillas), que supera y amplía la encuesta
+  previa ya registrada en v2.2. Añade: la "una tarea" de la web corporativa y audiencias
+  priorizadas explícitas; casos de producto concretos para el buscador (varios colegios por
+  ciudad, multi-campus en BIC); arquitectura de marca con intocables vs. abierto a UX/UI, sistema
+  de capas con caso de prueba (Paulo VI), y alcance/plazos/custodia reales de la guía de marca
+  (pilotos en marzo 2027 sin guía de colegio); cifras del grupo sin fuente única (19/21/22 colegios
+  según quién responda); tensión confirmada en los 3 pilares sin orden compartido entre los 4
+  entrevistados, con la cita "prueba antes que promesa" que refuerza la tensión del pilar AI
+  Fluency ya registrada en §1; tono de marca (tabla "es/no es", 3 momentos del recorrido);
+  gobernanza de contenido confirmada (Global MAC vs. colegios); valoración directa de la web
+  actual por las 4 personas que la encargaron, sin consenso entre ellas; detalle de imagen (sin
+  DAM, Hero Film como material más cercano a marca, sesión de imagen aparte acordada). Fuente:
+  cuestionario E1 (29 oct) + transcripción parcial (falta la hora central, pendiente pedir a Paz
+  la completa) + notas en directo. Las propuestas de rediseño que nacen de esta sesión (no son
+  hallazgos, son ideas de GUT a validar) van a `propuesta-sistema.md` §7, no aquí.
+- 2026-11-04 · v2.6 · Incorpora la sesión en vivo de E2 — Marketing y Admisiones (4 nov 2026, 90
+  min: Aniol Javaloyes, Jaime Abad, Carlota Vázquez, Emmanuel Franco), que cierra los pendientes de
+  v2.4 (puntos de pérdida, métricas, comentarios finales). Añade: matiz fuerte sobre el canal
+  EMEA/AME (es tooling con fecha de caducidad, no cultural fijo), restricción legal LOPD en EMEA,
+  decisión confirmada de que el application form de Orbital deja de ser público, métrica real de
+  conversión WhatsApp→CRM en AME (20-30%), un tercer actor de gobernanza no contemplado hasta ahora
+  (dirección académica del colegio, dueña del reenrollment en AME), cifras reales de capacidad/
+  retención con fuerte asimetría EMEA/AME, tour virtual confirmado fuera de alcance con pregunta de
+  formato abierta, confirmación a nivel de implementación del modelo masterbrand + CSS, ambición de
+  escala (24-25 → 100 coles en 3-5 años), y matiz sobre el perfil "local" de AME (confianza, no
+  pereza). Detalle completo por bloques en `entrevistas.md` §1 ("Síntesis de la sesión en vivo —
+  E2"). Fuente: transcripción completa de la sesión (docx) + cuestionario previo ya registrado en
+  v2.4.

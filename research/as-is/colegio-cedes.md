@@ -155,10 +155,11 @@
 
 ## Pendiente
 
-- Confirmar si "Jornada de Puertas Abiertas" (acceso directo) y "Vida
+- ~~Confirmar si "Jornada de Puertas Abiertas" (acceso directo) y "Vida
   Escolar → Open Days" son la misma página con dos URLs o contenido
-  realmente distinto (parecen duplicados por el fetch).
-- Pasada visual (capturas) en cuanto el navegador funcione.
+  realmente distinto~~ — **resuelto 2026-11-04**, ver Changelog.
+- ~~Pasada visual (capturas) en cuanto el navegador funcione~~ —
+  **resuelto 2026-11-04**, ver Changelog.
 
 ## Changelog
 
@@ -268,3 +269,9 @@
     contenedor repetible en el HTML, es texto corrido con negritas — pero
     no se tocó ese fichero en esta pasada (fuera del alcance asignado:
     solo frame CEDES + este as-is). Pendiente de revisión conjunta.
+- 2026-11-04: Pasada visual. **"Jornada de Puertas Abiertas" confirmada
+  como alias:** `/próxima-jornada-de-puertas-abiertas` redirige a
+  `/nuestro-colegio/school-life/open-days` — es la misma página con dos
+  URLs, no contenido duplicado; no hace falta tratarla como página
+  independiente. Home revisado visualmente: Hero + grid de accesos
+  coincide con lo ya documentado por texto, sin hallazgos nuevos.

@@ -17,9 +17,9 @@
 | 6 | Galería de imágenes | CAT-CON-013 | |
 | 7 | Franja de logos | CAT-CON-011 | |
 | 8 | Lista de enlaces | CAT-NAV-006 | Construido este sprint |
-| 9 | Bloque de contacto | — | Sin mapeo 1:1 — se compone con CAT-CON-001 + datos, o CAT-FRM-001 si lleva formulario. 💭 revisar si hace falta ficha propia |
+| 9 | Bloque de contacto | — | Sin mapeo 1:1 — se compone con CAT-CON-001 + datos, o CAT-FRM-001 si lleva formulario. **Resuelto 2026-11-04:** no hace falta ficha propia, ver `decisiones.md` |
 | 10 | Bloque social (iconos) | — | Se valoró como módulo del kit (CAT-COM-013) y se retiró — se compone a mano con CAT-COM-001 cuando haga falta |
-| 11 | Formulario | CAT-FRM-001 (+ CAT-FRM-004 si el proceso es multi-paso) | |
+| 11 | Formulario | CAT-FRM-001 (+ CAT-FRM-004 si el proceso es multi-paso) | Multi-paso confirmado en CBS (`/solicitud-informacion/`): Google Form embebido, 2 páginas |
 | 12 | Encabezado/navegación | CAT-NAV-001 | |
 | 13 | Widget flotante | CAT-COM-012 | Construido este sprint |
 | 14 | Panel de cookies | CAT-MDL-005 | Construido este sprint |
@@ -36,10 +36,9 @@
 
 ## Huecos reales
 
-Dos, bajo impacto, no urgentes — no bloquean Fase 2, se resuelven componiendo módulos existentes
+Uno, bajo impacto, no urgente — no bloquea Fase 2, se resuelve componiendo módulos existentes
 cuando aparezca el caso real:
 
-- **#9 Bloque de contacto** sin formulario — no tiene ficha propia en el kit.
 - **#20 Vídeo embebido inline** — el kit solo tiene vídeo en modal (CAT-MDL-002).
 
 ## Historial
@@ -47,3 +46,8 @@ cuando aparezca el caso real:
 - 2026-11-03 · v1.0 · Extraído de `propuesta-sistema.md` §4 a documento propio, para que viva junto
   a `inventario-modulos.md` y sea más fácil de encontrar desde Fase 2. Contenido sin cambios,
   verificado de nuevo contra los índices reales del kit en el momento de moverlo.
+- 2026-11-04 · v1.1 · Cerrado el 💭 de la fila #9 (bloque de contacto) — no hace falta ficha propia,
+  ver `decisiones.md`. Sale de "Huecos reales": no era un hueco, era una pregunta sin resolver.
+- 2026-11-04 · v1.2 · Añadida nota a la fila #11 (Formulario): el caso multi-paso ya no es
+  hipotético, confirmado en vivo en CBS (`/solicitud-informacion/`), ver pasada visual en
+  `colegio-bs.md`.
