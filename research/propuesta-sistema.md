@@ -1,0 +1,330 @@
+# Propuesta de sistema — páginas, plantillas y módulos (a máximos)
+
+> **Qué es este documento y por qué existe.** Todo lo anterior (`as-is/`, `inventario-modulos.md`,
+> `plantillas.md`) es **auditoría**: qué hay hoy, escuela por escuela. Esto es distinto —
+> es la **propuesta de sistema único** que sale de esa auditoría, pensada ya con la lógica de un
+> rediseño: no "Alminar tiene esto, CBS tiene esto otro, CEDES tiene esto otro", sino **un único
+> tipo de página por cada necesidad real**, con su plantilla, pensado para servir a los 3 pilotos
+> y a los 18+ coles futuros por igual. Si dos coles tienen "extraescolares", aquí hay **una** fila
+> "Extraescolares", no dos.
+>
+> **Para qué sirve:** que no se te pase nada al evaluar si la propuesta está bien encaminada, y
+> que tengas una lista clara y corta que llevar a los coles para preguntar "¿esto lo necesitáis
+> todo, os falta algo, hay algo que no usáis?" — sin enseñarles un Figma de 141 tarjetas.
+>
+> **Lo que esto NO es:** no es la versión combinada institucional+coles (esa sigue aplazada, a
+> petición tuya). Son **dos estructuras limpias, una por lado**, listas para que decidas si
+> fusionarlas o no más adelante.
+>
+> **Cómo marco las cosas:**
+> - Sin marca = evidenciado en la auditoría tal cual, propuesta directa.
+> - 🔀 = punto de convergencia sin resolver (ya flaggeado en `plantillas.md`) — dos coles lo
+>   construyen de forma distinta hoy, hay que elegir un estándar.
+> - 💭 = sugerencia mía de rediseño, no evidenciada como conflicto en el audit — una lectura que
+>   hago al unificar, para que la valores, no un hecho.
+> - 🏫 = condicional — no todos los coles lo necesitarán (depende de si ofrecen ese servicio).
+
+---
+
+## 1 · Estructura Institucional — página → plantilla
+
+9 páginas auditadas hoy, ya es un sistema único (un solo sitio, no hay que deduplicar entre
+coles). La lectura de rediseño aquí es más ligera.
+
+| # | Página | Plantilla | Nota |
+|---|---|---|---|
+| 1 | Home | **T1 · Home** | Única, sin cambios. |
+| 2 | Who we are | **T2 · Content Page** | |
+| 3 | Mission, vision & values | **T2 · Content Page** | |
+| 4 | Educational Pillars | **T2 · Content Page** | |
+| 5 | Global Student Advisory Board | **T2 · Content Page** | 💭 Es la única página "de programa/iniciativa" que hay hoy en institucional — ver §6 sobre si conviene tratarla como el primer caso de un tipo de página repetible ("Programa/Iniciativa"), no como una página única. |
+| 6 | Leadership Team | **T3 · Directory — People** | |
+| 7 | Find a School | **T4 · Directory — Schools** | |
+| 8 | Insights | **T5 · Listing** | |
+| 9 | News & Events | **T5 · Listing** | Mismo molde que Insights — candidata fuerte a fusionarse en una sola sección de listado con filtro por tipo. |
+| 10 | Legal / Privacidad / Cookies | **T2 · Content Page** | 💭 No cuenta en el "9" del as-is porque no existe hoy — el footer anuncia estos enlaces pero ninguno lleva a destino real (`institucional.md`, "Pendiente"). Se añade aquí porque el sistema propuesto sí la necesita. |
+
+**Plantillas institucional: 5** (T1, T2, T3, T4, T5 — T6 resuelto, se fundió en T2). La página 10
+usa T2, no suma plantilla nueva.
+
+---
+
+## 2 · Estructura Coles — página → plantilla (sistema único)
+
+Deduplicado desde las 141 páginas auditadas en Alminar/CBS/CEDES. Agrupado por sección de
+navegación, no por plantilla, para que sea legible como sitemap.
+
+### Inicio
+
+| Página | Plantilla | Universal/Condicional |
+|---|---|---|
+| Home | **T1 · Home (flexible)** | Universal |
+
+### Sobre el colegio
+
+| Página | Plantilla | Universal/Condicional |
+|---|---|---|
+| Quiénes somos / Sobre el colegio | **T2** | Universal |
+| Nuestra historia | **T2** | Universal |
+| Ideario / Filosofía educativa | **T2** | Universal |
+| Carta del director/a | **T2** | Universal |
+| Modelo / Proyecto educativo (overview) | **T2** | Universal |
+| Etapas educativas (Infantil/Primaria/Secundaria/Bachillerato) | 🔀 **T2 o T8 — sin decidir** | Universal |
+| Calidad y acreditaciones | **T2** | 🏫 Depende de si el cole tiene acreditaciones propias que mostrar |
+| Instalaciones | **T2** | Universal |
+| Equipo / Claustro | **T2** o **T3** (como institucional) | 🏫 |
+| Programa / Iniciativa educativa (bilingüismo, proyecto solidario, robótica...) | **T2** | 💭 Propongo unificar aquí Globot, Proyecto Solidario, Enseñanza bilingüe (CEDES), Work Experience (CBS) — hoy son páginas sueltas con nombres de negocio distintos, pero comparten forma con GSAB de institucional. Ver §6. |
+| Página larga con pestañas (El Colegio, Proyecto Educativo) | 🔀 **T9 — en duda** | Ver §6: puede que esto se retire al dividir en páginas individuales como arriba, en vez de mantenerse como plantilla propia. |
+
+### Vida escolar / Servicios
+
+| Página | Plantilla | Universal/Condicional |
+|---|---|---|
+| Servicios (hub) | **T5** | Universal |
+| Comedor | **T2** | Universal |
+| Transporte escolar | **T2** | 🏫 |
+| Uniforme escolar | **T2** | 🏫 |
+| Calendario escolar | **T2** | Universal |
+| Políticas escolares (reglamento, protección) | **T2** | Universal |
+| Aula matinal / Horario ampliado | **T2** | 🏫 |
+| Extraescolares (listado) | **T5** | Universal |
+| Extraescolares (detalle de actividad) | **T8** | Universal — repetible, una instancia por actividad que ofrezca el cole |
+| Campamento de verano | **T8** | 🏫 |
+| Departamento de orientación / apoyo | **T2** | 🏫 |
+
+### Admisiones
+
+| Página | Plantilla | Universal/Condicional |
+|---|---|---|
+| Admisiones (overview + proceso) | **T7** | Universal |
+| Jornadas de puertas abiertas / Reserva de visita | **T7** | Universal |
+| Preguntas frecuentes (admisiones) | **T7** | Universal |
+| Solicitud de información | **T7** | 💭 Candidata a plegarse dentro de "Admisiones (overview)" como sección/CTA, no página propia — solo 1 instancia real hoy. |
+
+> ⚠️ Recordatorio de alcance (ya en `hallazgos.md`): en EMEA la solicitud/matrícula real pasa a
+> un portal externo (Orbital). Estas páginas son captación y visita, no el flujo completo.
+
+### Noticias
+
+| Página | Plantilla | Universal/Condicional |
+|---|---|---|
+| Noticias / Actualidad (listado) | **T5** | Universal |
+| Noticia / Evento — detalle | **T2** | Universal — no auditado en profundidad aún, se asume T2 por patrón |
+
+### Acceso y legal
+
+| Página | Plantilla | Universal/Condicional |
+|---|---|---|
+| Acceso a portal de familias/alumnos | **T10** | Universal — la plataforma de destino varía por cole (Phidias, u otra) |
+| Aviso legal / Privacidad / Cookies | 🔀 **T2 — sin decidir si lleva Content Block** | Universal |
+
+### Fuera del sistema de plantillas (no son páginas-plantilla)
+
+| Elemento | Por qué no entra aquí |
+|---|---|
+| Dossier informativo / informes (flipbook) | Es un documento embebido (módulo #23), no un tipo de página — vive dentro de una página de Admisiones o Sobre el colegio. |
+| Contacto | Probablemente se pliega dentro de Admisiones o Footer — sin instancia propia clara en el audit. |
+
+**Plantillas coles: 7** (T1, T2, T5, T7, T8, T9 🔀, T10) — **sin contar T9**, que está en duda,
+serían **6 firmes**.
+
+---
+
+## 3 · Catálogo de plantillas de referencia
+
+| Código | Nombre | Lado | Estado |
+|---|---|---|---|
+| T1 | Home (flexible) | Ambos | Firme |
+| T2 | Content Page (flexible) | Ambos | Firme, pero con 3 preguntas de convergencia abiertas (etapa, legal, servicio) |
+| T3 | Directory — People | Institucional | Firme |
+| T4 | Directory — Schools | Institucional | Firme |
+| T5 | Listing | Ambos | Firme |
+| T7 | Admissions / Enrolment | Coles | Firme, con matiz de alcance EMEA |
+| T8 | Activity / Programme Detail | Coles | Firme — la plantilla más repetida de todo el sistema |
+| T9 | Long-form Tabbed Page | Coles | **En duda** — ver §6 |
+| T10 | Account Access / Login | Coles | Firme |
+
+10-12 es el presupuesto del cliente para el sistema completo (ambos lados juntos, sin fusionar
+aún). Hoy: 5 institucional + 6-7 coles = 11-12 sin fusionar — ya dentro de rango, incluso sin
+reconciliar duplicados como T1/T2/T5 que existen en los dos lados con forma casi idéntica.
+
+---
+
+## 4 · Catálogo de módulos — limpieza y mapeo al kit
+
+Movido a `research/as-is/equivalencia-modulos-kit.md` (vive junto a `inventario-modulos.md`, más
+fácil de encontrar desde Fase 2). Dos huecos reales, bajo impacto: bloque de contacto sin
+formulario (#9) y vídeo embebido inline (#20) — no bloquean nada.
+
+---
+
+## 5 · Preguntas para consultar con los coles
+
+1. **¿Todos ofrecéis actividades extraescolares con página propia por actividad?** (T8 — hoy solo
+   confirmado en CBS, 19 instancias)
+2. **¿Vuestras páginas de etapa (Infantil/Primaria/Secundaria/Bachillerato) necesitan ficha de
+   datos (horario, tarifa...) o contenido más narrativo?** — determina si "etapa" converge hacia
+   la forma de T2 o la de T8 (🔀, ver §6)
+3. **¿Tenéis campamento de verano u otros programas estacionales?** (🏫 T8)
+4. **¿Vuestro portal de familias/alumnos es una plataforma externa (tipo Phidias) o algo propio?**
+   (T10 — la integración varía)
+5. **¿Usáis "El Colegio"/"Proyecto Educativo" como una sola página con pestañas, o preferiríais
+   páginas separadas por tema (Quiénes somos, Equipo, Instalaciones...) como institucional?** (🔀
+   T9, ver §6)
+6. **¿Tenéis iniciativas o programas propios que merezcan página individual** (como el Proyecto
+   Solidario de CEDES o el Globot de CBS), **o es mejor un listado único de "Programas"?**
+7. **¿Uniforme, transporte, aula matinal — cuáles de estos servicios ofrecéis?** (🏫, determina qué
+   páginas condicionales activar por cole)
+8. **¿Queréis destacados/avisos (admisiones abiertas, noticia destacada...) junto al header o al
+   hero, visibles en varias páginas a la vez?** — si es contenido propio del hero (badge, CTA
+   secundario), es variante del módulo Hero; si es independiente y persiste entre páginas, hace
+   falta un módulo nuevo (el catálogo actual no tiene nada equivalente). Surgió al priorizar qué
+   módulos puede empezar a explorar UI.
+
+---
+
+## 6 · Decisiones de rediseño que esto obliga a tomar antes de Fase 2
+
+Estas son las piezas que no se resuelven auditando — son elección de diseño, tuya o del cliente.
+
+### 6.1 · Página de etapa/currículo — 🔀 ya flaggeado en `plantillas.md`
+CEDES la construye como T2 (narrativa + datos clave), CBS como T8 (ficha de asignaturas +
+documentos + CTA). Mismo contenido real, dos formas. Hay que elegir una.
+
+### 6.2 · Páginas legales — 🔀 ya flaggeado en `plantillas.md`
+CEDES las construye con cuerpo de texto real (T2); CBS, como texto legal plano sin estructura.
+Menor impacto que 6.1, pero mismo tipo de decisión.
+
+### 6.3 · Páginas de servicio (uniforme, transporte, políticas) — 🔀 ya flaggeado en `plantillas.md`
+Alminar las escribe con párrafo de intro real; CBS/CEDES muchas veces no. Si T2 exige Content
+Block, estas páginas solo necesitan ese párrafo añadido — ya no es una pregunta de plantilla, es
+una checklist de contenido pendiente por página.
+
+### 6.4 · ¿Se mantiene T9 (página larga con pestañas)? — 💭 nuevo, no estaba flaggeado así antes
+Solo existe en Alminar (2 instancias), y **no tiene equivalente en institucional** — institucional
+resuelve lo mismo (Who we are, Team, Facilities...) como páginas independientes bajo T2/T3, no
+como pestañas de una sola URL. Dos caminos:
+- **Mantener T9** como plantilla propia para coles que prefieran una página "todo en uno".
+- **Retirarla**, dividiendo "El Colegio"/"Proyecto Educativo" en las páginas T2 individuales que
+  ya están en la lista de §2 (Quiénes somos, Instalaciones, Equipo...) — más consistente con
+  institucional, un sistema más simple (6 plantillas en vez de 7), y evita mantener el módulo #24
+  (contenedor de pestañas heterogéneo) solo para este caso.
+
+Si se retira T9, el módulo #24 del kit (`CAT-CON-016`) queda sin uso claro en Ariston — no hay que
+borrarlo del kit (sirve para otros proyectos), pero no se usaría aquí.
+
+### 6.5 · "Programa / Iniciativa" como plantilla transversal — 💭 nuevo
+Institucional tiene Global Student Advisory Board; los coles tienen Globot, Proyecto Solidario,
+Work Experience, Enseñanza bilingüe. Todas son, estructuralmente, la misma forma (T2 con sus
+slots opcionales al completo: Stat Callout, FAQ, Timeline, CTA). Hoy están tratadas como páginas
+sueltas con nombre propio en cada sitio. Si se nombra este patrón explícitamente ("Programa /
+Iniciativa"), se gana un tipo de página reutilizable y predecible para cualquier iniciativa futura
+del grupo o de un cole — sin inventar una plantilla nueva, es una forma de leer T2 que ya existe.
+
+### 6.6 · Contacto y "Sobre Ariston Education" en los coles — 💭 nuevo
+CBS y CEDES tienen cada uno su propia página "Acerca de Ariston Education" con el mismo texto de
+grupo que ya vive en institucional. En el rediseño, ¿tiene sentido que cada cole duplique ese
+contenido, o debería enlazar a la página institucional correspondiente? Afecta al conteo de
+páginas por cole y evita mantener el mismo texto en 21+ sitios.
+
+---
+
+## 7 · Ideas de rediseño nacidas de E1 — para validar con cliente
+
+Propuestas de GUT, no hallazgos — cada una nace de un finding concreto de la sesión en vivo de E1
+(`entrevistas.md` §3, `hallazgos.md` v2.5). Ninguna está decidida; se listan para que el equipo las
+valore antes de llevarlas a cliente o a Fase 2.
+
+- **Find a School persistente en cabecera**, con mapa y filtros, y modo "comparar" neutro (que
+  aparezcan los colegios, no una tabla) en ciudades con varios colegios del grupo. Nace de: Paz
+  pide la propuesta de valor en primera pantalla + Find a School como acción principal; referencias
+  GEMS y Bright Horizons.
+- **Barra de pertenencia en las webs de colegio**: franja fina de Ariston con vuelta al grupo, no
+  una capa de navegación — distinto de la pregunta 8 de §5 (esa es sobre destacados/avisos en el
+  header o hero del *grupo*; esto es sobre cómo el *colegio* enlaza de vuelta a Ariston). Nace de:
+  modelo de dos niveles de navegación, referencia Four Seasons.
+- **Audiencias secundarias sin recorrido propio**: talento ("Unirse a Ariston") y prensa en footer
+  y menú secundario, cada una con destino claro. Nace de: audiencias priorizadas, acuerdo de
+  sesión.
+- **Componente "Respaldado por Ariston" en dos tamaños**: sello obligatorio en footer + módulo
+  opcional "qué aporta Ariston a este colegio". 💭 posible módulo nuevo o variante — no está en el
+  catálogo de 24 hoy, revisar contra `equivalencia-modulos-kit.md` si se decide construirlo.
+- **Sistema de diseño por capas** (base Ariston + capa de colegio: wordmark, icono, color, foto,
+  narrativa), a probar con un colegio de color identitario fuerte (Paulo VI), uno heredado (CEDES)
+  y uno británico — **esto lo tiene que explorar UI en una futura reunión**, nota tomada en sesión.
+- **Narrativa propia de cada colegio como contenido estructurado**: unos pocos campos por centro
+  (frase que lo define, qué lo hace distinto, cómo se vive, foto de portada), reutilizados en la
+  home del colegio, su tarjeta del buscador y su "About". Evita que 21+ colegios con la misma
+  plantilla suenen igual. Sin decidir dónde vive ese contenido (¿el cole, el currículo...?).
+- **Visual más claro**: base más clara y menos masas oscuras que la web actual (Nerea), jerarquía
+  tipográfica, menos texto, interacciones gráfico-foto con medida.
+- **Sección de pilares + componente "prueba" reutilizable**: una sección que explique AI Fluency /
+  Human Power Skills / Student Voice en lenguaje de familia, y un componente de prueba (historia
+  real, cita, dato, imagen, etiquetado por pilar) repetible en home, colegios e Insights. Aplica
+  "prueba antes que promesa" (David) — **requiere que Ariston aporte historias reales por pilar,
+  que hoy no existen.** 💭 posible módulo nuevo, no está en el catálogo hoy.
+- **Regla editorial "IA siempre con lo humano"**: ningún módulo, titular o historia habla de IA sin
+  su contraparte humana al lado. Nace de: tensión de los 3 pilares sin orden compartido, ya
+  registrada en `hallazgos.md` v2.5.
+- **Cifras con fuente única**, gestionadas en un sitio y pintadas en toda la web — nace directo del
+  hallazgo de cifras inconsistentes (19/21/22 colegios según quién responda).
+- **Primera pantalla de la home de grupo**: una sola frase en lenguaje de familia + buscador justo
+  debajo, sin carrusel ni vídeo que retrase la tarea principal. Nace de: la "una tarea" de Paz.
+- **CTA fijo + formulario estándar breve y mobile-first** por colegio, con campos opcionales por
+  región, siempre a un clic; formularios en vez de email, con validación/CAPTCHA/RGPD integrados.
+  Detalle de campos pendiente de E2.
+- **Sistema de imagen sin rostros como tratamiento gráfico, no como carencia disimulada**: espacios,
+  manos, detalles, trabajos de alumnos, planos generales; etiqueta "imagen generada con IA" como
+  componente visible y consistente.
+- **Guía de fotografía para colegios** como posible entregable del proyecto, construida con Mauro
+  (que ya la está armando) — encuadres, luz, qué no fotografiar, consentimientos, pensada para
+  equipos sin fotógrafo propio.
+- **DAM con consentimiento, caducidad y origen IA por imagen** — si un DAM completo no entra en
+  alcance, al menos esos 3 campos en el gestor de medios del CMS. Nace directo del hallazgo de
+  imagen de `hallazgos.md` §3/v2.5.
+- **Diseñar con las imágenes reales de los pilotos desde el primer wireframe de alta** — no esperar
+  a tener fotografía definitiva para empezar a maquetar.
+- **Roles de CMS que reflejen central/colegio**, con flujo de "pedir módulo nuevo" y guía de tono
+  breve — formaliza la gobernanza ya confirmada (Global MAC vs. colegios).
+- **Multi-campus**: una web por colegio con selector de campus (no una web por campus) — propuesta
+  a validar, caso de prueba BIC (2 campus).
+
+---
+
+## Historial
+
+- 2026-11-03 · Añade §7, ideas de rediseño nacidas de la sesión en vivo de E1 — son propuestas de
+  GUT para validar, no hallazgos, por eso van en un documento distinto de `hallazgos.md`. 2 ideas
+  marcadas como posible módulo nuevo (componente "Respaldado por Ariston", componente "prueba"
+  reutilizable) — no se construyen todavía, solo quedan flaggeadas.
+- 2026-11-03 · Bajado a Figma como deck presentable: página nueva "Propuesta — Resumen Ejecutivo"
+  (`162:2`) en el mismo archivo, 7 frames apilados — (1) Dónde estamos [cifras clave], (2) Cómo
+  vamos a unificar [metodología con ejemplo antes/método/después], (3) Sistema Institucional
+  [9→5, cards por plantilla], (4) Sistema Coles [~27→6-7, sitemap por sección con tags 🏫/🔀/💭],
+  (5) Catálogo de Plantillas [capturas reales reutilizadas del Page Audit], (6) Catálogo de
+  Módulos [14 ya en el kit / 6 nuevos este sprint / 4 huecos menores], (7) Decisiones y Preguntas
+  [cierre, para antes de Fase 2]. A petición explícita: "tengo que ser capaz de presentar a
+  alguien". No añade información nueva sobre este documento — es su traducción visual.
+- 2026-11-03 · Añade pregunta 8 a §5 (destacados/avisos junto a header o hero) — surgió al revisar
+  con Carla qué 5 módulos puede empezar a explorar UI sin esperar a cerrar las decisiones de §6;
+  Header y Hero quedan como seguros para empezar igualmente (la estructura base no depende de la
+  respuesta, el destacado se añadiría después sin rehacer lo ya resuelto).
+- 2026-11-03 · §4 (catálogo de módulos → kit) movido a su propio documento,
+  `research/as-is/equivalencia-modulos-kit.md`, junto a `inventario-modulos.md` — es material de
+  referencia para Fase 2, no parte de la propuesta de rediseño en sí. Verificado de nuevo código a
+  código contra los índices reales del kit al moverlo. También bajado a Figma (página "Equivalencia
+  — Módulos ↔ Kit").
+- 2026-11-03 · Creado. Primera versión de la propuesta de sistema único (páginas→plantilla,
+  módulos→kit), a petición explícita de la propietaria del proyecto: "quiero que pienses mucho y
+  muy bien... vamos a máximos... dos estructuras comunes (institucional y coles) desde las que
+  pueda intentar cubrir la propuesta así como diseñar páginas y navegación". Construido
+  deduplicando las 141 páginas de coles y las 9 de institucional por tipo real, no por instancia
+  por cole, aplicando los 3 puntos de convergencia ya flaggeados en `plantillas.md` más 3
+  observaciones nuevas de rediseño (T9 en duda, "Programa/Iniciativa" transversal, posible
+  duplicación de "Sobre Ariston Education"). No resuelve ninguna de las decisiones abiertas — las
+  deja explícitas en §6 para que se decidan, con preguntas concretas para consultar a los coles en
+  §5.
+- 2026-11-04 · Añadida fila 10 a §1 (Legal / Privacidad / Cookies, T2) — no estaba en el "9" del
+  as-is porque institucional no tiene hoy una página real a la que auditar (enlaces del footer sin
+  destino, ver `institucional.md`), pero el sistema propuesto la necesita. No suma plantilla
+  nueva.
